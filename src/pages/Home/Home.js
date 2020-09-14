@@ -1,5 +1,5 @@
-import React from 'react';
-// Material
+import React, { Fragment }from 'react';
+
 import { makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import Card from '@material-ui/core/Card';
@@ -8,10 +8,10 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import Grid from '@material-ui/core/Grid';
 import Avatar from '@material-ui/core/Avatar';
 import Typography from '@material-ui/core/Typography';
-// Components
-import Experience from '../components/experience';
-import Education from '../components/education';
-import Data from '../components/dates';
+
+import Experience from '../../components/experience';
+import Education from '../../components/education';
+import Data from '../../components/dates';
 
 const useStyles = makeStyles( (theme) => ({
   heroContent: {
@@ -66,12 +66,12 @@ const useStyles = makeStyles( (theme) => ({
   }
 }));
 
-export default function Home() {
+const Home = () => {
 
   const classes = useStyles();
 
   return (
-    <React.Fragment>
+    <Fragment>
       <CssBaseline />
       <div className={`${classes.layout} ${classes.cardGrid}`}>
         <Grid container spacing={2}>
@@ -144,6 +144,8 @@ export default function Home() {
           </Grid>
         </Grid>
       </div>
-    </React.Fragment>
+    </Fragment>
   );
 }
+
+export default Home
