@@ -9,9 +9,9 @@ import Grid from '@material-ui/core/Grid';
 import Avatar from '@material-ui/core/Avatar';
 import Typography from '@material-ui/core/Typography';
 
-import Experience from '../../components/experience';
-import Education from '../../components/education';
-import Data from '../../components/dates';
+import Experience from '../../components/Experience';
+import Education from '../../components/Education';
+import Dates from '../../components/Dates';
 
 const useStyles = makeStyles( (theme) => ({
   heroContent: {
@@ -105,7 +105,7 @@ const Home = () => {
               <Typography component="h2" variant="h2" align="left" color="textPrimary" className={classes.titleSection}>
                 Datos Personales
               </Typography>
-              <Data />
+              <Dates />
             </Card>
           </Grid>
           <Grid item xs={12}>

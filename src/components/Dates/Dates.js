@@ -1,13 +1,13 @@
 import React from 'react';
-// Material
+
 import { makeStyles } from '@material-ui/core/styles';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 import Divider from '@material-ui/core/Divider';
 import Typography from '@material-ui/core/Typography';
-// Content
-import PersonalData from '../content/personalData';
+
+import PersonalData from '../../content/personalData';
 
 const useStyles = makeStyles( (theme) => ({
   root: {
@@ -19,7 +19,7 @@ const useStyles = makeStyles( (theme) => ({
   }
 }));
 
-export default function Data () {
+const Dates = () => {
 
   const classes = useStyles();
 
@@ -75,3 +75,5 @@ export default function Data () {
     </List>
   );
 }
+
+export default Dates;

@@ -1,6 +1,6 @@
 import React from 'react';
 import classNames from 'classnames';
-// Material
+
 import { makeStyles } from '@material-ui/core/styles';
 import Link from '@material-ui/core/Link';
 import List from '@material-ui/core/List';
@@ -8,8 +8,8 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 import Divider from '@material-ui/core/Divider';
 import Typography from '@material-ui/core/Typography';
-// Content
-import EducationList from '../content/education';
+
+import EducationList from '../../content/education';
 
 const useStyles = makeStyles( (theme) => ({
   root: {
@@ -28,7 +28,7 @@ const useStyles = makeStyles( (theme) => ({
   }
 }));
 
-export default function Education () {
+const Education = () => {
 
   const classes = useStyles();
 
@@ -60,3 +60,5 @@ export default function Education () {
     </List>
   );
 }
+
+export default Education;

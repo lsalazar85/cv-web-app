@@ -1,5 +1,5 @@
 import React from 'react';
-// Material
+
 import { makeStyles } from '@material-ui/core/styles';
 import Link from '@material-ui/core/Link';
 import List from '@material-ui/core/List';
@@ -10,8 +10,8 @@ import Avatar from '@material-ui/core/Avatar';
 import Divider from '@material-ui/core/Divider';
 import Typography from '@material-ui/core/Typography';
 import Chip from '@material-ui/core/Chip';
-// Content
-import DataExperience from '../content/dataExperience';
+
+import DataExperience from '../../content/dataExperience';
 
 const useStyles = makeStyles( (theme) => ({
   root: {
@@ -36,7 +36,7 @@ const useStyles = makeStyles( (theme) => ({
   }
 }));
 
-export default function Experience () {
+const Experience = () => {
 
   const classes = useStyles();
 
@@ -80,3 +80,5 @@ export default function Experience () {
     </List>
   );
 }
+
+export default Experience
