@@ -31,6 +31,7 @@
     "not op_mini all"
   ],
   "devDependencies": {
+    "@testing-library/react": "^11.0.4",
     "node-sass": "^4.14.1",
     "sass-loader": "^7.3.1"
   }
