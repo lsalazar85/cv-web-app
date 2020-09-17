@@ -29,8 +29,9 @@ Starts on `http://localhost:3000`
 * React.js
 * React Hooks
 * React Context State
+* React Testing Library & Jest
+* Styled-Components Package
 * Node.js
 * Express.js
-* Styled-Components Package
 * Lodash
 
