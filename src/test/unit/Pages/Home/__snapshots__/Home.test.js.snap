@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home should render correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-bdnylx jREUZL"
+  >
+    <div
+      class="sc-gtssRu eFRkeg"
+    >
+      <div>
+        Experience
+      </div>
+      <div>
+        Education
+      </div>
+      <div>
+        Dates
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
