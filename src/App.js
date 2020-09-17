@@ -1,12 +1,14 @@
-import React, { Fragment }  from "react";
+import React from "react";
+
 import Routing from "./Routing";
 import { GlobalStyle } from "./styles/GlobalStyle";
+import { MainContextProvider } from "./context/MainContext";
 
 const App = () => (
-  <Fragment>
+  <MainContextProvider>
     <GlobalStyle />
     <Routing />
-  </Fragment>
+  </MainContextProvider>
 )
 
 export default App;
