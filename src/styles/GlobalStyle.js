@@ -20,31 +20,4 @@ export const GlobalStyle = createGlobalStyle`
     overscroll-behavior: none;
     width: 100%; 
   }
-  #app {
-    box-shadow: 0 0 10px rgba(0, 0, 0, .05);
-    overflow-x: hidden;
-    min-height: 100vh;
-    padding-bottom: 10px;
-  }
-
-  /* Slide */
-  .slick-slide{
-    padding-right: 10px;
-    box-sizing: border-box;
-  }
-  .slick-slide:last-child{
-    padding-right: 0;
-  }
-  .hiddenOptions{
-    visibility: hidden;
-    transition: 0.1s;
-  }
-  .editTable:hover .hiddenOptions{
-    visibility: visible;
-    transition: 0.1s;
-  }
-  
-  .slider-container {
-    ${fadeIn()}
-  }
 `
