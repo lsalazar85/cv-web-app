@@ -3,7 +3,7 @@ import {  NavLink } from 'react-router-dom';
 
 import { 
     VscAccount, 
-    VscCallOutgoing, 
+    VscPinned, 
     VscBriefcase,
     VscBook,
     VscCloudDownload
@@ -11,15 +11,21 @@ import {
 
 import { SideMenuContainer, SideIcons } from './styled';
 
+const ICONS = [
+    { icon: <VscAccount />, url:'/' },
+    { icon: <VscPinned />, url:'/address' },
+    { icon: <VscBriefcase />, url:'/work-experience' },
+    { icon: <VscBook />, url:'/education' },
+]
+
 const SideMenu = () => {
     return(
         <SideMenuContainer>
             <SideIcons position={'center'}>
                 <ul>
-                    <li><NavLink exact to="/"><VscAccount /></NavLink></li>
-                    <li><NavLink to="/personal-info"><VscCallOutgoing /></NavLink></li>
-                    <li><NavLink to="/work-experience"><VscBriefcase /></NavLink></li>
-                    <li><NavLink to="/education"><VscBook /></NavLink></li>
+                    { ICONS.map((item, index) => (
+                        <li key={index}><NavLink exact to={item.url}>{item.icon}</NavLink></li>
+                    ))}
                 </ul>
             </SideIcons>
             <SideIcons position={'flex-end'} padddingBotton={32}>

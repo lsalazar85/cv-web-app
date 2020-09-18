@@ -2,14 +2,18 @@ import React from 'react';
 
 import MainContent from '../../components/MainContent/MainContent';
 import SideMenu from '../../components/SideMenu/SideMenu';
+import Person from '../../components/Person';
 
-import { HomeContainer, HomeContent } from './styled';
+import { HomeContainer, HomeContent, Side } from './styled';
 
 const Home = () => (
   <HomeContainer>
     <HomeContent>
       <SideMenu />
-      <MainContent />
+      <Side>
+        <Person />
+        <MainContent />
+      </Side>
     </HomeContent>
   </HomeContainer>
 )

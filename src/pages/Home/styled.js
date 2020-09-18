@@ -23,4 +23,12 @@ const HomeContent = styled.div`
     @media (min-width: 1100px){width: 1140px;}    
 `
 
-export { HomeContainer, HomeContent }
+const Side = styled.div`
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+    flex-grow: 1;
+    @media (max-width: 992px){display: flex; flex-direction: column;}
+`
+
+export { HomeContainer, HomeContent, Side }

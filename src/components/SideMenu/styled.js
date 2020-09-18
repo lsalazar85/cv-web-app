@@ -3,9 +3,11 @@ import styled from 'styled-components'
 const SideMenuContainer = styled.aside`
     display: flex;
     flex-direction: column;
-    height: 100%;
-    width: 80px;
-    
+    padding: 0 32px;
+    @media (max-width: 992px){
+        border-right: 1px solid #3dba7d;
+        padding: 0 15px;
+    }
 `
 const SideIcons = styled.div`
     display: flex;
@@ -27,6 +29,11 @@ const SideIcons = styled.div`
         opacity: 0.95;
         transition: 0.25s;
 
+        @media (max-width: 992px){
+            width: 1.7em;
+            height: 1.7em;
+        }
+        
         &:hover {
             color: #3dba7d;
             opacity: 1;
@@ -42,7 +49,7 @@ const SideIcons = styled.div`
 
    ul {
         padding-top: 15em;
-        @media (max-width: 900px){padding-top: 8em;}
+        @media (max-width: 992px){padding-top: 8em;}
 
         li {
             margin-bottom: 45px;

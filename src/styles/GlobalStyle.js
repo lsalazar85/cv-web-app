@@ -3,7 +3,7 @@ import { createGlobalStyle } from 'styled-components'
 export const GlobalStyle = createGlobalStyle`
   html {
     box-sizing: border-box;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: -apple-system, 'Roboto', sans-serif;
   }
   *, *:before, *:after {
     box-sizing: inherit;
@@ -13,10 +13,11 @@ export const GlobalStyle = createGlobalStyle`
   button { background: transparent; border: 0; outline: 0 }
   body {
     background: #fefefe;
+    color: #ffffff;
     height: 100vh;
     margin: 0 auto;
     padding: 0;
     overscroll-behavior: none;
     width: 100%; 
-  }3
+  }
 `
