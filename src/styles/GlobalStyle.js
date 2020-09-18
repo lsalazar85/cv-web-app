@@ -1,5 +1,4 @@
 import { createGlobalStyle } from 'styled-components'
-import { fadeIn } from './animation'
 
 export const GlobalStyle = createGlobalStyle`
   html {
@@ -19,5 +18,5 @@ export const GlobalStyle = createGlobalStyle`
     padding: 0;
     overscroll-behavior: none;
     width: 100%; 
-  }
+  }3
 `

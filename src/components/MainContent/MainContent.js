@@ -1,10 +1,22 @@
 import React from 'react';
+import { Switch, Route } from 'react-router-dom';
 
-const MainContent = () => {
+import AboutMe from '../AboutMe';
+import InfoPersonal from '../InfoPersonal';
+import Education from '../Education';
+import WorkExperience from '../WorkExperience';
 
-    return(
-        <div>MainContent</div>
-    )
-}
+import { MainContentContainer } from './styled';
+
+const MainContent = () => (
+    <Switch>
+        <MainContentContainer>
+            <Route exact path="/" render={() => <AboutMe />}/>
+            <Route path="/personal-info" render={() => <InfoPersonal />}/>
+            <Route path="/work-experience" render={() => <WorkExperience />}/>
+            <Route path="/education" render={() => <Education />}/>                                   
+        </MainContentContainer>
+    </Switch>  
+)
 
 export default MainContent

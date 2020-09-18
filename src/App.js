@@ -1,13 +1,14 @@
-import React, { Fragment } from "react";
+import React from "react";
+import { BrowserRouter } from 'react-router-dom';
 
-import Routing from "./Routing";
+import Home from "./pages/Home";
 import { GlobalStyle } from "./styles/GlobalStyle";
 
 const App = () => (
-  <Fragment>
+  <BrowserRouter>
     <GlobalStyle />
-    <Routing />
-  </Fragment>
+    <Home />
+  </BrowserRouter>
 )
 
 export default App;
