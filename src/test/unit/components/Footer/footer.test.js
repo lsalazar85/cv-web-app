@@ -1,19 +1,15 @@
 import React from 'react';
 import { render, cleanup } from '@testing-library/react';
-import { BrowserRouter as Router } from 'react-router-dom';
 
-import Home from '../../../../pages/Home';
+import Footer from '../../../../components/Footer';
 
-describe('Home', () => {
+describe('Footer', () => {
     afterEach(cleanup);
 
     test('should render correctly', () => {
         const { asFragment } = render(
-          <Router>
-            <Home />
-          </Router>
+          <Footer />
         );
-    
         expect(asFragment()).toBeDefined();
         expect(asFragment()).toMatchSnapshot();
     });

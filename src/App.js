@@ -1,14 +1,14 @@
 import React from "react";
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 
 import Home from "./pages/Home";
 import { GlobalStyle } from "./styles/GlobalStyle";
 
 const App = () => (
-  <BrowserRouter>
+  <Router>
     <GlobalStyle />
     <Home />
-  </BrowserRouter>
+  </Router>
 )
 
 export default App;
