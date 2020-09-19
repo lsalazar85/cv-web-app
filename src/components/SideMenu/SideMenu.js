@@ -1,9 +1,9 @@
 import React from 'react';
 import {  NavLink } from 'react-router-dom';
+import { FaRegMap } from "react-icons/fa";
 
 import { 
     VscAccount, 
-    VscPinned, 
     VscBriefcase,
     VscBook,
     VscCloudDownload
@@ -13,7 +13,7 @@ import { SideMenuContainer, SideIcons } from './styled';
 
 const ICONS = [
     { id: 1, icon: <VscAccount />, url:'/' },
-    { id: 2, icon: <VscPinned />, url:'/address' },
+    { id: 2, icon: <FaRegMap />, url:'/address' },
     { id: 3, icon: <VscBriefcase />, url:'/work-experience' },
     { id: 4, icon: <VscBook />, url:'/education' },
 ]

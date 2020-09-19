@@ -17,7 +17,7 @@ const SideIcons = styled.div`
 
     &:last-child{
         height: auto;
-        padding-bottom: ${props =>  props.position === 'flex-end' && '40px'}
+        padding-bottom: 28px;
     }
 
     svg {

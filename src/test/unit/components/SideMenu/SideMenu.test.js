@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, cleanup } from '@testing-library/react';
 
-import SideMenu from '../../../components/SideMenu';
+import SideMenu from '../../../../components/SideMenu';
 
 describe('SideMenu', () => {
     afterEach(cleanup);

@@ -13,7 +13,7 @@ const Person = () => (
   <PersonContainer>
     <PersonName>
       <h2>Luis Salazar</h2>
-      <span>Front End Developer</span>
+      <span>Software Engineer</span>
       <ul>
         {
           SOCIAL_MEDIA.map(item => (
