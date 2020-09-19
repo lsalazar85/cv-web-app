@@ -1,5 +1,5 @@
-const React = require('react');
-const { render, cleanup } = require('@testing-library/react');
+import React from 'react';
+import { render, cleanup } from '@testing-library/react';
 
 import Modal from '../../../../../components/UI/Modal';
 import { Animation, ModalFooter } from '../../../../../components/UI/Modal/styled';
