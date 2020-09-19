@@ -1,37 +1,42 @@
 import styled from 'styled-components'
 
 const SideMenuContainer = styled.aside`
-    display: flex;
-    flex-direction: column;
-    padding: 0 32px;
-    @media (max-width: 992px){
-        border-right: 1px solid #3dba7d;
+    @media (min-width: 320px){
+        display: flex;
+        flex-direction: column;
         padding: 0 15px;
     }
+
+    @media (min-width: 992px){padding: 0 32px;}
 `
 const SideIcons = styled.div`
-    display: flex;
-    flex-direction: column;
-    justify-content: ${props => props.position};
-    align-items: center;
-    height: 100vh;
-    color: #ffffff;
+    @media (min-width: 320px){
+        display: flex;
+        flex-direction: column;
+        justify-content: ${props => props.position};
+        align-items: center;
+        height: 100vh;
+        color: #ffffff;
 
-    &:last-child{
-        padding-bottom: ${props =>  props.position === 'flex-end' && '40px'}
+        &:last-child{
+            height: auto;
+            padding-bottom: ${props =>  props.position === 'flex-end' && '40px'}
+        }
     }
 
     svg {
-        width: 2em;
-        height: 2em;
-        cursor: pointer;
-        color: #ffffff;
-        opacity: 0.95;
-        transition: 0.25s;
-
-        @media (max-width: 992px){
+        @media (min-width: 320px) {
+            cursor: pointer;
+            color: #ffffff;
+            opacity: 0.95;
+            transition: 0.25s;
             width: 1.7em;
             height: 1.7em;
+        }
+
+        @media (min-width: 992px){
+            width: 2em;
+            height: 2em;
         }
         
         &:hover {
@@ -48,18 +53,15 @@ const SideIcons = styled.div`
     }
 
    ul {
-        padding-top: 15em;
-        @media (max-width: 992px){padding-top: 8em;}
-
         li {
-            margin-bottom: 45px;
+            @media (min-width: 320px){
+                margin-bottom: 45px;
 
-            &:last-child{
-                margin-bottom: 0px;
+                &:last-child{
+                    margin-bottom: 0px;
+                }
             }
         }
    }
 `
-
-
 export { SideMenuContainer, SideIcons }

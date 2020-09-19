@@ -1,5 +1,6 @@
 {
   "name": "cv-web-app",
+  "author": "Luis Salazar",
   "version": "0.1.0",
   "jest": {
     "moduleNameMapper": {

@@ -12,10 +12,10 @@ import {
 import { SideMenuContainer, SideIcons } from './styled';
 
 const ICONS = [
-    { icon: <VscAccount />, url:'/' },
-    { icon: <VscPinned />, url:'/address' },
-    { icon: <VscBriefcase />, url:'/work-experience' },
-    { icon: <VscBook />, url:'/education' },
+    { id: 1, icon: <VscAccount />, url:'/' },
+    { id: 2, icon: <VscPinned />, url:'/address' },
+    { id: 3, icon: <VscBriefcase />, url:'/work-experience' },
+    { id: 4, icon: <VscBook />, url:'/education' },
 ]
 
 const SideMenu = () => {
@@ -23,8 +23,8 @@ const SideMenu = () => {
         <SideMenuContainer>
             <SideIcons position={'center'}>
                 <ul>
-                    { ICONS.map((item, index) => (
-                        <li key={index}><NavLink exact to={item.url}>{item.icon}</NavLink></li>
+                    { ICONS.map(item => (
+                        <li key={item.id}><NavLink exact to={item.url}>{item.icon}</NavLink></li>
                     ))}
                 </ul>
             </SideIcons>
