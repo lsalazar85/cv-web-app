@@ -1,21 +1,21 @@
 import React from 'react';
 
-import Experience from '../../components/Experience';
-import Education from '../../components/Education';
-import Dates from '../../components/Dates';
+import MainContent from '../../components/MainContent/MainContent';
+import SideMenu from '../../components/SideMenu/SideMenu';
+import Person from '../../components/Person';
 
-import { HomeContainer, HomeContent } from './styled';
+import { HomeContainer, HomeContent, Side } from './styled';
 
-const Home = () => {
-  return (
-    <HomeContainer>
-      <HomeContent>
-        <Experience />
-        <Education />
-        <Dates />
-      </HomeContent>
-    </HomeContainer>
-  );
-}
+const Home = () => (
+  <HomeContainer>
+    <HomeContent>
+      <SideMenu />
+      <Side>
+        <Person />
+        <MainContent />
+      </Side>
+    </HomeContent>
+  </HomeContainer>
+)
 
 export default Home
