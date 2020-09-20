@@ -1,6 +1,30 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`MainContent should render correctly 1`] = `
+exports[`MainContent check render & navigating to contact 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-bdnylx kVdUYB"
+  >
+    <div>
+      Contact
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`MainContent check render & navigating to education 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-bdnylx kVdUYB"
+  >
+    <div>
+      Education
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`MainContent check render & navigating to home 1`] = `
 <DocumentFragment>
   <div
     class="sc-bdnylx kVdUYB"
@@ -8,6 +32,16 @@ exports[`MainContent should render correctly 1`] = `
     <div>
       AboutMe
     </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`MainContent check render & navigating to work experience 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-bdnylx kVdUYB"
+  >
+    <div />
   </div>
 </DocumentFragment>
 `;
