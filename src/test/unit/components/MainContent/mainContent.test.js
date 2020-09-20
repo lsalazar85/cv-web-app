@@ -8,9 +8,9 @@ import MainContent from '../../../../components/MainContent';
 describe('MainContent', () => {
     afterEach(cleanup);
 
-    test('check render & navigating to home', () => {
+    it('check render & navigating to home', () => {
         const history = createMemoryHistory();
-        
+
         const { container, asFragment } = render(
           <Router history={history}>
             <MainContent />
@@ -22,7 +22,7 @@ describe('MainContent', () => {
         expect(asFragment()).toMatchSnapshot();
     });
 
-    test('check render & navigating to work experience', () => {
+    it('check render & navigating to work experience', () => {
       const history = createMemoryHistory()
       history.push('/work-experience')
 
@@ -37,7 +37,7 @@ describe('MainContent', () => {
       expect(asFragment()).toMatchSnapshot();
     });
 
-    test('check render & navigating to contact', () => {
+    it('check render & navigating to contact', () => {
       const history = createMemoryHistory()
       history.push('/contact')
 
@@ -52,7 +52,7 @@ describe('MainContent', () => {
       expect(asFragment()).toMatchSnapshot();
     });
 
-    test('check render & navigating to education', () => {
+    it('check render & navigating to education', () => {
       const history = createMemoryHistory()
       history.push('/education')
 

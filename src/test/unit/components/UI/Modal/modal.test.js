@@ -7,14 +7,14 @@ import { Animation, ModalFooter } from '../../../../../components/UI/Modal/style
 describe('Modal', () => {
   afterEach(cleanup);
 
-  test('Modal should render correctly', () => {
+  it('Modal should render correctly', () => {
     const { asFragment } = render(<Modal onClose={jest.fn()} show={true} />);
 
     expect(asFragment()).toBeDefined();
     expect(asFragment()).toMatchSnapshot();
   });
 
-  test('Modal should render correctly with others props', () => {
+  it('Modal should render correctly with others props', () => {
     const content = 'content';
     const footer = 'footer';
 
@@ -39,7 +39,7 @@ describe('Modal', () => {
 describe('ModalFooter', () => {
   afterEach(cleanup);
 
-  test('ModalFooter should render correctly', () => {
+  it('ModalFooter should render correctly', () => {
     const children = 'Modal';
 
     const { asFragment } = render(<ModalFooter position={'flex-end'}>{children}</ModalFooter>);
@@ -52,7 +52,7 @@ describe('ModalFooter', () => {
 describe('Animation', () => {
   afterEach(cleanup);
 
-  test('Animation should render correctly', () => {
+  it('Animation should render correctly', () => {
     const content = 'Animation';
     const state = '';
 

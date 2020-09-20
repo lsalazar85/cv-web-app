@@ -6,7 +6,7 @@ import Footer from '../../../../components/Footer';
 describe('Footer', () => {
     afterEach(cleanup);
 
-    test('should render correctly', () => {
+    it('should render correctly', () => {
         const { asFragment } = render(
           <Footer />
         );

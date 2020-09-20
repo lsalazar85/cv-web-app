@@ -7,7 +7,7 @@ import SideMenu from '../../../../components/SideMenu';
 describe('SideMenu', () => {
     afterEach(cleanup);
 
-    test('should render correctly', () => {
+    it('should render correctly', () => {
         const { asFragment } = render(
           <Router>
             <Route>

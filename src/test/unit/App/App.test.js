@@ -6,7 +6,7 @@ import App from '../../../App';
 describe('App', () => {
   afterEach(cleanup);
 
-  test('should render correctly', () => {
+  it('should render correctly', () => {
       const { asFragment } = render(
         <App />
       );
