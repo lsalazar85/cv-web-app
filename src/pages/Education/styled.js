@@ -1,10 +1,9 @@
 import styled from 'styled-components'
 
-const HomeContainer = styled.div`
+const EducationContainer = styled.div`
     display: flex;
     flex-direction: column; 
-    align-items: center;
 `
 
 
-export { HomeContainer }
+export { EducationContainer }

@@ -4,6 +4,7 @@ import { FaInstagram, FaLinkedinIn, FaGithub } from "react-icons/fa";
 import { MY_PHOTO } from '../../constans';
 import Image from '../UI/Image/Image';
 import { BoxNameContainer, BoxNameContent, BoxNameAvatar } from './styled';
+import RegularTitle from '../UI/RegularTitle';
 
 const SOCIAL_MEDIA = [
   { id: 1, icon: <FaInstagram />, url: 'https://www.instagram.com/lanzaroth.js/' },
@@ -14,10 +15,10 @@ const SOCIAL_MEDIA = [
 const BoxName = () => (
   <BoxNameContainer>
     <BoxNameAvatar>
-      <Image src={MY_PHOTO} alt={'Avatar Image'} width={'75%'} circular />
+      <Image src={MY_PHOTO} alt={'Avatar Image'} width={'80%'} circular />
     </BoxNameAvatar>
     <BoxNameContent>
-      <h2>Luis Salazar</h2>
+      <RegularTitle content={'Luis Salazar'} maxFontSize={'48'} minFontSize={'18'} />
       <span>Software Engineer</span>
       <ul>
         {

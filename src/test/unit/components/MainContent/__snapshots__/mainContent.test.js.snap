@@ -3,7 +3,7 @@
 exports[`MainContent check render & navigating to contact 1`] = `
 <DocumentFragment>
   <div
-    class="sc-bdnylx dXtBuM"
+    class="sc-jSFkmK kjcbts"
   >
     <div>
       Contact
@@ -15,10 +15,14 @@ exports[`MainContent check render & navigating to contact 1`] = `
 exports[`MainContent check render & navigating to education 1`] = `
 <DocumentFragment>
   <div
-    class="sc-bdnylx dXtBuM"
+    class="sc-jSFkmK kjcbts"
   >
-    <div>
-      Education
+    <div
+      class="sc-eCApGN fwlGwx"
+    >
+      <h2>
+        Education
+      </h2>
     </div>
   </div>
 </DocumentFragment>
@@ -27,10 +31,25 @@ exports[`MainContent check render & navigating to education 1`] = `
 exports[`MainContent check render & navigating to home 1`] = `
 <DocumentFragment>
   <div
-    class="sc-bdnylx dXtBuM"
+    class="sc-jSFkmK kjcbts"
   >
-    <div>
-      AboutMe
+    <div
+      class="sc-gtssRu dFFniv"
+    >
+      <div>
+        <h2
+          class="sc-bdnylx eQSovS"
+        >
+          Hello
+        </h2>
+      </div>
+      <div
+        class="sc-hKFyIo exwCyP"
+      >
+        <p>
+          I have worked on many projects with different technologies and frontend tools ( React.js, React Native, Javascript, Modern React, Redux, Jest Enzyme Test, Node.js, Npm, Express.js, Yarn, HTML5, CSS3, Sass, Material-UI, Styled-components, FlexBox, Atomic Design Components).
+        </p>
+      </div>
     </div>
   </div>
 </DocumentFragment>
@@ -39,7 +58,7 @@ exports[`MainContent check render & navigating to home 1`] = `
 exports[`MainContent check render & navigating to work experience 1`] = `
 <DocumentFragment>
   <div
-    class="sc-bdnylx dXtBuM"
+    class="sc-jSFkmK kjcbts"
   >
     <div />
   </div>

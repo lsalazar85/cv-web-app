@@ -27,7 +27,7 @@ const FooterContainer = styled.footer`
     }
     
     @media (min-width: 320px){display: none;}
-    @media (min-width: 992px){display: block;}
+    @media (min-width: 992px){display: flex;}
 `
 
 export { FooterContainer };

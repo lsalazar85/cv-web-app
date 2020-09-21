@@ -1,9 +1,13 @@
 import React from 'react';
 
+import { EducationContainer } from './styled';
+
 const Education = () => {
 
   return (
-    <div>Education</div>
+    <EducationContainer>
+     <h2>Education</h2>
+    </EducationContainer>
   );
 }
 

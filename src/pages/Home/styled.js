@@ -25,11 +25,10 @@ const HomeContent = styled.div`
 
 const Side = styled.div`
     display: flex;
-    flex-shrink: 0;
     flex-grow: 1;
-
-    @media (min-width: 320px) {flex-direction: column;}
-    @media (min-width: 992px) {flex-direction: row;}
+    
+    @media (min-width: 320px) {flex-direction: column; align-items: space-between;}
+    @media (min-width: 992px) {flex-direction: row; justify-content: space-between;}
 `
 
 export { HomeContainer, HomeContent, Side }

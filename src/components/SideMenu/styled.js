@@ -17,7 +17,7 @@ const SideIcons = styled.div`
 
     &:last-child{
         height: auto;
-        padding-bottom: 28px;
+        padding-bottom: 32px;
     }
 
     svg {

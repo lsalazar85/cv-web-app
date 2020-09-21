@@ -6,7 +6,7 @@ exports[`SideMenu should render correctly 1`] = `
     class="sc-bdnylx gcnJZm"
   >
     <div
-      class="sc-gtssRu hhKbBh"
+      class="sc-gtssRu gWiSiy"
     >
       <ul>
         <li>
@@ -98,7 +98,7 @@ exports[`SideMenu should render correctly 1`] = `
       </ul>
     </div>
     <div
-      class="sc-gtssRu cmfjMf"
+      class="sc-gtssRu dARegU"
     >
       <svg
         fill="currentColor"

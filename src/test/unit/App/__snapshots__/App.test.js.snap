@@ -3,16 +3,16 @@
 exports[`App should render correctly 1`] = `
 <DocumentFragment>
   <div
-    class="sc-fujyUd kJiBNz"
+    class="sc-crzoUp eSFmtP"
   >
     <div
-      class="sc-pNWxx bxyvht"
+      class="sc-dIsAE gdeehq"
     >
       <aside
-        class="sc-gtssRu iDVAyP"
+        class="sc-gKAblj hQUhwS"
       >
         <div
-          class="sc-dlnjPT blSzEh"
+          class="sc-iCoHVE ctvivo"
         >
           <ul>
             <li>
@@ -104,7 +104,7 @@ exports[`App should render correctly 1`] = `
           </ul>
         </div>
         <div
-          class="sc-dlnjPT dLHREP"
+          class="sc-iCoHVE eswose"
         >
           <svg
             fill="currentColor"
@@ -124,17 +124,17 @@ exports[`App should render correctly 1`] = `
         </div>
       </aside>
       <div
-        class="sc-jrsJCI dvnjPa"
+        class="sc-bqGHjH dKwrDf"
       >
         <div
-          class="sc-eCApGN fpCjEb"
+          class="sc-pNWxx ihXmbt"
         >
           <div
-            class="sc-jSFkmK ioGeyS"
+            class="sc-jrsJCI evJArt"
           >
             <div
-              class="sc-hKFyIo igFJWv"
-              width="75%"
+              class="sc-fujyUd iGEVwC"
+              width="80%"
             >
               <img
                 alt="Avatar Image"
@@ -143,11 +143,15 @@ exports[`App should render correctly 1`] = `
             </div>
           </div>
           <div
-            class="sc-gKAblj jMbgdL"
+            class="sc-kEqYlL cEsdiy"
           >
-            <h2>
-              Luis Salazar
-            </h2>
+            <div>
+              <h2
+                class="sc-bdnylx cVLySl"
+              >
+                Luis Salazar
+              </h2>
+            </div>
             <span>
               Software Engineer
             </span>
@@ -219,16 +223,31 @@ exports[`App should render correctly 1`] = `
           </div>
         </div>
         <div
-          class="sc-bdnylx dXtBuM"
+          class="sc-jSFkmK kjcbts"
         >
-          <div>
-            AboutMe
+          <div
+            class="sc-gtssRu dFFniv"
+          >
+            <div>
+              <h2
+                class="sc-bdnylx eQSovS"
+              >
+                Hello
+              </h2>
+            </div>
+            <div
+              class="sc-hKFyIo exwCyP"
+            >
+              <p>
+                I have worked on many projects with different technologies and frontend tools ( React.js, React Native, Javascript, Modern React, Redux, Jest Enzyme Test, Node.js, Npm, Express.js, Yarn, HTML5, CSS3, Sass, Material-UI, Styled-components, FlexBox, Atomic Design Components).
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </div>
     <footer
-      class="sc-iCoHVE hmMMoC"
+      class="sc-iqAbSa iehmVr"
     >
       <span>
         Take a look at the code of this project
