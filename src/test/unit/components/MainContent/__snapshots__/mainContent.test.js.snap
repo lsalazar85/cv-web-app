@@ -3,7 +3,7 @@
 exports[`MainContent check render & navigating to contact 1`] = `
 <DocumentFragment>
   <div
-    class="sc-bdnylx kVdUYB"
+    class="sc-bdnylx dXtBuM"
   >
     <div>
       Contact
@@ -15,7 +15,7 @@ exports[`MainContent check render & navigating to contact 1`] = `
 exports[`MainContent check render & navigating to education 1`] = `
 <DocumentFragment>
   <div
-    class="sc-bdnylx kVdUYB"
+    class="sc-bdnylx dXtBuM"
   >
     <div>
       Education
@@ -27,7 +27,7 @@ exports[`MainContent check render & navigating to education 1`] = `
 exports[`MainContent check render & navigating to home 1`] = `
 <DocumentFragment>
   <div
-    class="sc-bdnylx kVdUYB"
+    class="sc-bdnylx dXtBuM"
   >
     <div>
       AboutMe
@@ -39,7 +39,7 @@ exports[`MainContent check render & navigating to home 1`] = `
 exports[`MainContent check render & navigating to work experience 1`] = `
 <DocumentFragment>
   <div
-    class="sc-bdnylx kVdUYB"
+    class="sc-bdnylx dXtBuM"
   >
     <div />
   </div>

@@ -1,31 +1,39 @@
 import styled from 'styled-components';
 
-const PersonContainer = styled.div`
+const BoxNameContainer = styled.div`
     display: flex;  
     flex-direction: column;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    opacity: 0.95;
-    transition: 0.25s;
+    background: none;
     
     @media(min-width: 320px){
         width: 100%;
-        padding: 10px;
+        padding: 15px 15px 15px 0; 
         justify-content: flex-start;
-        background-image: none; 
+        background: none; 
     }
 
     @media(min-width: 992px) {
         width: 300px;
         padding: 0px;
-        justify-content: flex-end;
-        background-image: url('https://w5.foxdsgn.com/niko/black/wp-content/uploads/sites/4/2019/03/niko_img.jpg');
-    }
+        justify-content: space-between;
+        background: #1c1c1c;
+    }  
 
     @media(min-width: 1100px) { width: 480px; }
 `
-const PersonName = styled.div`
+
+const BoxNameAvatar = styled.div`
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+
+    @media(min-width: 320px){display:none;}
+    @media(min-width: 992px){display:flex;}
+
+`
+
+const BoxNameContent = styled.div`
     display: flex; 
     color: #ffffff;
     line-height: 1.17;
@@ -83,4 +91,4 @@ const PersonName = styled.div`
     }
 `
 
-export { PersonContainer, PersonName }
+export { BoxNameContainer, BoxNameContent, BoxNameAvatar }

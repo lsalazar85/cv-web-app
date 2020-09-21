@@ -2,7 +2,7 @@ import React from 'react';
 
 import MainContent from '../../components/MainContent/MainContent';
 import SideMenu from '../../components/SideMenu/SideMenu';
-import Person from '../../components/Person';
+import BoxName from '../../components/BoxName';
 import Footer from '../../components/Footer/Footer';
 
 import { HomeContainer, HomeContent, Side } from './styled';
@@ -12,7 +12,7 @@ const Home = () => (
     <HomeContent>
       <SideMenu />
       <Side>
-        <Person />
+        <BoxName />
         <MainContent />
       </Side>
     </HomeContent>

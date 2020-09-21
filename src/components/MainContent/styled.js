@@ -6,8 +6,8 @@ const MainContentContainer = styled.div`
     flex-shrink: 0;
     flex-grow: 1;
     
-    @media (min-width: 320px){background: #1c1c1c;}
-    @media (min-width: 992px){background: transparent;}
+    @media (min-width: 320px){background: #1c1c1c; padding: 15px;}
+    @media (min-width: 992px){background: transparent; padding: 32px;}
 `
 
 export { MainContentContainer }

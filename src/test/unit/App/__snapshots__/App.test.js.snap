@@ -3,10 +3,10 @@
 exports[`App should render correctly 1`] = `
 <DocumentFragment>
   <div
-    class="sc-gKAblj lnbren"
+    class="sc-fujyUd kJiBNz"
   >
     <div
-      class="sc-iCoHVE fwHFIG"
+      class="sc-pNWxx bxyvht"
     >
       <aside
         class="sc-gtssRu iDVAyP"
@@ -95,7 +95,7 @@ exports[`App should render correctly 1`] = `
                       fill="none"
                     />
                     <path
-                      d="M19.005 2C20.107 2 21 2.898 21 3.99v16.02c0 1.099-.893 1.99-1.995 1.99H3V2h16.005zM7 4H5v16h2V4zm12 0H9v16h10V4zm-5 4l4 4h-3v4h-2v-4h-3l4-4zm10 4v4h-2v-4h2zm0-6v4h-2V6h2z"
+                      d="M22 20.007a1 1 0 0 1-.992.993H2.992A.993.993 0 0 1 2 20.007V19h18V7.3l-8 7.2-10-9V4a1 1 0 0 1 1-1h18a1 1 0 0 1 1 1v16.007zM4.434 5L12 11.81 19.566 5H4.434zM0 15h8v2H0v-2zm0-5h5v2H0v-2z"
                     />
                   </g>
                 </svg>
@@ -124,13 +124,26 @@ exports[`App should render correctly 1`] = `
         </div>
       </aside>
       <div
-        class="sc-fujyUd eOwzfk"
+        class="sc-jrsJCI dvnjPa"
       >
         <div
-          class="sc-hKFyIo gZFRiD"
+          class="sc-eCApGN fpCjEb"
         >
           <div
-            class="sc-eCApGN gRA-dcE"
+            class="sc-jSFkmK ioGeyS"
+          >
+            <div
+              class="sc-hKFyIo igFJWv"
+              width="75%"
+            >
+              <img
+                alt="Avatar Image"
+                src="https://scontent.faep5-1.fna.fbcdn.net/v/t1.0-9/118404240_10157203921491816_5452134641605056529_n.jpg?_nc_cat=102&_nc_sid=09cbfe&_nc_ohc=-GrYADG-VDsAX9949ai&_nc_ht=scontent.faep5-1.fna&oh=14ae5d038864692e363d7a8c8442ddb3&oe=5F8DDECD"
+              />
+            </div>
+          </div>
+          <div
+            class="sc-gKAblj jMbgdL"
           >
             <h2>
               Luis Salazar
@@ -206,7 +219,7 @@ exports[`App should render correctly 1`] = `
           </div>
         </div>
         <div
-          class="sc-bdnylx kVdUYB"
+          class="sc-bdnylx dXtBuM"
         >
           <div>
             AboutMe
@@ -215,7 +228,7 @@ exports[`App should render correctly 1`] = `
       </div>
     </div>
     <footer
-      class="sc-jSFkmK hGQWCO"
+      class="sc-iCoHVE hmMMoC"
     >
       <span>
         Take a look at the code of this project

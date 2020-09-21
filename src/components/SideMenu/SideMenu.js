@@ -1,6 +1,6 @@
 import React from 'react';
 import {  NavLink } from 'react-router-dom';
-import { RiContactsBookUploadLine } from "react-icons/ri";
+import { RiMailSendLine } from "react-icons/ri";
 
 import { 
     VscAccount, 
@@ -15,7 +15,7 @@ const ICONS = [
     { id: 1, icon: <VscAccount />, url:'/'},
     { id: 2, icon: <VscBook />, url:'/education'},
     { id: 3, icon: <VscBriefcase />, url:'/work-experience'},
-    { id: 4, icon: <RiContactsBookUploadLine />, url:'/contact'},
+    { id: 4, icon: <RiMailSendLine />, url:'/contact'},
 ]
 
 const SideMenu = () => {
