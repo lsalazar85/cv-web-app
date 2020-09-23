@@ -14,9 +14,9 @@ const MainContent = () => (
             <Route exact path="/"  render={() => <AboutMe />}/>
             <Route path="/contact" render={() => <Contact />}/>
             <Route path="/work-experience" render={() => <WorkExperience />}/>
-            <Route path="/education" render={() => <Education />}/>                                   
+            <Route path="/education" render={() => <Education />}/>
         </MainContentContainer>
-    </Switch>  
+    </Switch>
 )
 
 export default MainContent

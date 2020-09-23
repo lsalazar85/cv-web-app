@@ -6,12 +6,12 @@ const MainContentContainer = styled.div`
     height: 100%;
 
     @media (min-width: 320px){
-        background: #1c1c1c; 
+        background: #1c1c1c;
         padding: 15px;
     }
 
     @media (min-width: 992px){
-        background: transparent; 
+        background: transparent;
         padding: 32px;
     }
 `

@@ -1,14 +1,14 @@
 import styled from 'styled-components';
 
 const BoxNameContainer = styled.div`
-    display: flex;  
+    display: flex;
     flex-direction: column;
     background: none;
-    
+
     @media(min-width: 320px){
-        padding: 15px 15px 15px 0; 
+        padding: 15px 15px 15px 0;
         justify-content: flex-start;
-        background: none; 
+        background: none;
     }
 
     @media(min-width: 992px) {
@@ -17,7 +17,7 @@ const BoxNameContainer = styled.div`
         justify-content: space-between;
         background: #1c1c1c;
         padding: 0 0 32px 0;
-    }  
+    }
 `
 
 const BoxNameAvatar = styled.div`
@@ -32,7 +32,7 @@ const BoxNameAvatar = styled.div`
 `
 
 const BoxNameContent = styled.div`
-    display: flex; 
+    display: flex;
     color: #ffffff;
     line-height: 1.17;
 
@@ -40,7 +40,7 @@ const BoxNameContent = styled.div`
         flex-direction: row;
         justify-content: space-between;
     }
-    
+
     @media (min-width: 992px) {flex-direction: column; align-items: center;}
 
     span {
@@ -68,7 +68,7 @@ const BoxNameContent = styled.div`
                 color: #ffffff;
                 opacity: 0.95;
                 transition: 0.25s;
-            
+
                 &:hover{
                     color: #00c483;
                     opacity: 1;
