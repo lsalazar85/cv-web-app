@@ -5,6 +5,7 @@ const MainContentContainer = styled.div`
     flex: 2;
     height: 100%;
     overflow: auto;
+    text-align: justify;
 
     @media (min-width: 320px){
         background: #1c1c1c;
