@@ -12,6 +12,7 @@ const GreetingTitle = styled.h2`
 
 const Introduction = styled.div`
     display: flex;
+    flex-direction: column;
 `
 
 export { AboutMeContainer, GreetingTitle, Introduction}

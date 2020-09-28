@@ -19,7 +19,7 @@ const BoxName = () => (
     </BoxNameAvatar>
     <BoxNameContent>
       <Title h1 content={'Luis Salazar'} maxFontSize={'45'} minFontSize={'18'} />
-      <span>Software Engineer</span>
+      <span>Front End Developer</span>
       <ul>
         {
           SOCIAL_MEDIA.map(item => (
