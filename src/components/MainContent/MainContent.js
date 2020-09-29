@@ -1,10 +1,10 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 
-import AboutMe from '../../pages/AboutMe';
-import Contact from '../../pages/Contact';
-import Education from '../../pages/Education';
-import WorkExperience from '../../pages/WorkExperience';
+import AboutMe from 'pages/AboutMe';
+import Contact from 'pages/Contact';
+import Education from 'pages/Education';
+import WorkExperience from 'pages/WorkExperience';
 
 import { MainContentContainer } from './styled';
 

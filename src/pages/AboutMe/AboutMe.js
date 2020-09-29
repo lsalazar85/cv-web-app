@@ -1,8 +1,30 @@
 import React from 'react';
+import { FaGithub, FaNodeJs, FaJira } from "react-icons/fa";
+import { GrGraphQl } from "react-icons/gr";
+import { SiJest, SiLogitech, SiTypescript, SiSlack } from "react-icons/si";
+import { 
+    DiJavascript1, 
+    DiReact, 
+    DiHtml5, 
+    DiCss3, 
+    DiSass, 
+    DiLess, 
+    DiBootstrap,
+    DiNpm,
+    DiApple,
+    DiVisualstudio,
+    DiTrello,
+    DiMozilla,
+    DiChrome,
+    DiGoogleDrive,
+    DiGit,
+    DiMongodb,
+    DiTerminal,
+} from "react-icons/di";
 
-import Title from '../../components/UI/Title';
-import Card from '../../components/UI/Card';
-import { AboutMeContainer } from './styled';
+import Title from 'components/UI/Title';
+import Card from 'components/UI/Card';
+import { AboutMeContainer, List } from './styled';
 
 const ABOUT_ME  = {
     introduction: [
@@ -13,6 +35,38 @@ const ABOUT_ME  = {
         {id:4, content: 'Interested in the entire full-stack spectrum and working on ambitious projects with positive people.'},
     ],
 }
+
+const mySkills = [
+    { id: 1, icon: <DiJavascript1 />},
+    { id: 2, icon: <DiReact />},
+    { id: 3, icon: <FaNodeJs />},
+    { id: 4, icon: <DiNpm/>},
+    { id: 5, icon: <GrGraphQl />},
+    { id: 6, icon: <SiTypescript />},
+    { id: 7, icon: <DiMongodb />},
+    { id: 8, icon: <DiHtml5 />},
+    { id: 9, icon: <DiCss3 />},
+    { id: 10, icon: <DiSass />},
+    { id: 11, icon: <DiLess />},
+    { id: 12, icon: <DiBootstrap />},
+    { id: 13, icon: <SiJest />},
+    { id: 14, icon: <DiGit />},
+]
+
+const myTools = [
+    { id: 1, icon: <DiApple />},
+    { id: 2, icon: <DiVisualstudio />},
+    { id: 3, icon: <DiChrome />},
+    { id: 4, icon: <DiMozilla />},
+    { id: 5, icon: <DiGoogleDrive />},
+    { id: 6, icon: <FaGithub />},
+    { id: 7, icon: <DiTerminal />},
+    { id: 8, icon: <DiTrello />},
+    { id: 9, icon: <FaJira />},
+    { id: 10, icon: <SiSlack />},
+    { id: 11, icon: <SiLogitech />},
+]
+
 
 const AboutMe = () => {
     return(
@@ -28,15 +82,26 @@ const AboutMe = () => {
             <Card>
                 <Title h2 content={'What I Do'} maxFontSize={'21'} minFontSize={'18'} />
             </Card>
-            
             <Card>
-                <Title h2 content={'My Principal Tools'} maxFontSize={'21'} minFontSize={'18'} />
+                <Title h2 content={'My Tools'} maxFontSize={'21'} minFontSize={'18'} />
+                <List>
+                    {
+                       myTools.map(item => (
+                           <li>{item.icon}</li>
+                       )) 
+                    }
+                </List>
             </Card>
-
             <Card>
                 <Title h2 content={'My Skills'} maxFontSize={'21'} minFontSize={'18'} />
+                <List>
+                    {
+                       mySkills.map(item => (
+                           <li>{item.icon}</li>
+                       )) 
+                    }
+                </List>
             </Card>
-
             <Card>
                 <Title h2 content={'Fun Facts'} maxFontSize={'21'} minFontSize={'18'} />
             </Card>

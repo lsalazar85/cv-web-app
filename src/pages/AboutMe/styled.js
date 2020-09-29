@@ -11,4 +11,37 @@ const Introduction = styled.div`
     flex-direction: column;
 `
 
-export { AboutMeContainer, Introduction}
+const List = styled.ul`
+    display: flex;
+    flex-wrap: wrap;
+
+    li {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-bottom: 18px;
+        
+
+        @media (min-width: 320px){
+            width: 33.33%;
+        }
+
+        @media (min-width: 768px){
+            width: 25%;
+        }
+
+        svg{
+            height: auto;
+
+            @media (min-width: 320px){
+                width: 50px;
+            }
+
+            @media (min-width: 768px){
+                width: 60px;
+            }
+        }
+    }
+`
+
+export { AboutMeContainer, Introduction, List}

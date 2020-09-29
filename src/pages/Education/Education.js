@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { EducationContainer } from './styled';
-import Title from '../../components/UI/Title';
+import Title from 'components/UI/Title';
 
 const Education = () => {
 

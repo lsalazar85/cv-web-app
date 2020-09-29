@@ -1,10 +1,10 @@
 import React from 'react';
 import { FaInstagram, FaLinkedinIn, FaGithub } from "react-icons/fa";
 
-import { MY_PHOTO } from '../../constans';
-import Image from '../UI/Image/Image';
+import { MY_PHOTO } from 'constans';
+import Image from 'components/UI/Image/Image';
+import Title from 'components/UI/Title';
 import { BoxNameContainer, BoxNameContent, BoxNameAvatar } from './styled';
-import Title from '../UI/Title';
 
 const SOCIAL_MEDIA = [
   { id: 1, icon: <FaInstagram />, url: 'https://www.instagram.com/lanzaroth.js/' },

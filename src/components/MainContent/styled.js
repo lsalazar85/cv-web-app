@@ -6,6 +6,20 @@ const MainContentContainer = styled.div`
     height: 100%;
     overflow: auto;
     text-align: justify;
+    scrollbar-width: thin;    
+    scrollbar-color: rgba(136, 136, 136, 0.15) transparent;
+
+    &::-webkit-scrollbar {
+        width:  5px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: rgba(136, 136, 136, 0.15);
+    }
+
+    &::-webkit-scrollbar-track {
+        background: transparent;
+    }
 
     @media (min-width: 320px){
         background: #1c1c1c;
