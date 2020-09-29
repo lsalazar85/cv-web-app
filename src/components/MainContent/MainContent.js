@@ -16,7 +16,7 @@ const MainContent = () => (
             <Route path="/work-experience" render={() => <WorkExperience />}/>
             <Route path="/education" render={() => <Education />}/>
         </MainContentContainer>
-    </Switch>
+     </Switch>
 )
 
 export default MainContent

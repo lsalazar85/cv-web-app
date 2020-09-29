@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { fadeIn } from 'styles/animation';
 
 const MainContentContainer = styled.div`
     display: flex;
@@ -8,6 +9,7 @@ const MainContentContainer = styled.div`
     text-align: justify;
     scrollbar-width: thin;    
     scrollbar-color: rgba(136, 136, 136, 0.15) transparent;
+    ${fadeIn({time: '300ms'})};
 
     &::-webkit-scrollbar {
         width:  5px;
@@ -29,6 +31,7 @@ const MainContentContainer = styled.div`
     @media (min-width: 992px){
         background: transparent;
         padding: 32px;
+        max-width: 624px;
     }
 
     p {

@@ -1,14 +1,18 @@
-import React from "react";
+import React, { Suspense, lazy } from "react";
 import { BrowserRouter as Router } from 'react-router-dom';
 
-import Home from "pages/Home";
-import { GlobalStyle } from "styles/GlobalStyle";
+import { GlobalStyle } from "./styles/GlobalStyle";
+import Spinner from "components/UI/Spinner";
+
+const Home = lazy(() => import('pages/Home'));
 
 const App = () => (
-  <Router>
-    <GlobalStyle />
-    <Home />
-  </Router>
+  <Suspense fallback={<Spinner />}>
+    <Router>
+      <GlobalStyle />
+      <Home />
+    </Router>
+  </Suspense>
 )
 
 export default App;

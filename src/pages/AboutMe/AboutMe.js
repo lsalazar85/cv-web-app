@@ -1,7 +1,8 @@
 import React from 'react';
 import { FaGithub, FaNodeJs, FaJira } from "react-icons/fa";
 import { GrGraphQl } from "react-icons/gr";
-import { SiJest, SiLogitech, SiTypescript, SiSlack } from "react-icons/si";
+import { SiJest, SiLogitech, SiTypescript, SiSlack, SiStyledComponents } from "react-icons/si";
+
 import { 
     DiJavascript1, 
     DiReact, 
@@ -44,13 +45,14 @@ const mySkills = [
     { id: 5, icon: <GrGraphQl />},
     { id: 6, icon: <SiTypescript />},
     { id: 7, icon: <DiMongodb />},
-    { id: 8, icon: <DiHtml5 />},
-    { id: 9, icon: <DiCss3 />},
-    { id: 10, icon: <DiSass />},
-    { id: 11, icon: <DiLess />},
-    { id: 12, icon: <DiBootstrap />},
-    { id: 13, icon: <SiJest />},
-    { id: 14, icon: <DiGit />},
+    { id: 8, icon: <SiStyledComponents />},
+    { id: 9, icon: <DiHtml5 />},
+    { id: 10, icon: <DiCss3 />},
+    { id: 11, icon: <DiSass />},
+    { id: 12, icon: <DiLess />},
+    { id: 13, icon: <DiBootstrap />},
+    { id: 14, icon: <SiJest />},
+    { id: 15, icon: <DiGit />},
 ]
 
 const myTools = [
@@ -87,7 +89,7 @@ const AboutMe = () => {
                 <List>
                     {
                        myTools.map(item => (
-                           <li>{item.icon}</li>
+                           <li key={item.id}>{item.icon}</li>
                        )) 
                     }
                 </List>
@@ -97,7 +99,7 @@ const AboutMe = () => {
                 <List>
                     {
                        mySkills.map(item => (
-                           <li>{item.icon}</li>
+                           <li key={item.id}>{item.icon}</li>
                        )) 
                     }
                 </List>

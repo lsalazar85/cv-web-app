@@ -3,7 +3,7 @@
 exports[`Image Component should render correctly 1`] = `
 <DocumentFragment>
   <div
-    class="sc-bdnylx jNnzgs"
+    class="sc-bdnylx kyfPvg"
     width="75%"
   >
     <img
@@ -17,7 +17,7 @@ exports[`Image Component should render correctly 1`] = `
 exports[`Image Component should render correctly with circular prop 1`] = `
 <DocumentFragment>
   <div
-    class="sc-bdnylx fVcTyk"
+    class="sc-bdnylx MxgGA"
     width="75%"
   >
     <img

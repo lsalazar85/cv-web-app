@@ -3,13 +3,13 @@
 exports[`BoxName should render correctly 1`] = `
 <DocumentFragment>
   <div
-    class="sc-gtssRu cMVyVo"
+    class="sc-hKFyIo errDa"
   >
     <div
-      class="sc-dlnjPT gKhYBO"
+      class="sc-eCApGN fzXQcQ"
     >
       <div
-        class="sc-bdnylx hfxBqG"
+        class="sc-bdnylx kxKkLS"
         width="80%"
       >
         <img
@@ -19,17 +19,17 @@ exports[`BoxName should render correctly 1`] = `
       </div>
     </div>
     <div
-      class="sc-hKFyIo ksPgIm"
+      class="sc-jSFkmK bhIxZW"
     >
       <div>
-        <h2
-          class="sc-eCApGN gwYyGG"
+        <h1
+          class="sc-gtssRu fXqZVa"
         >
           Luis Salazar
-        </h2>
+        </h1>
       </div>
       <span>
-        Software Engineer
+        Front End Developer
       </span>
       <ul>
         <li>
