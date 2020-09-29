@@ -18,17 +18,17 @@ const HomeContent = styled.div`
     max-height: 100%;
     max-width: 100%;
 
-    @media (min-width: 320px){width: 100%; height: 100%;}
-    @media (min-width: 992px){width: 90%; height: 94%;}
-    @media (min-width: 1100px){width: 1140px;}    
+    @media (min-width: 320px) {width: 100%; height: 100%;}
+    @media (min-width: 992px) {width: 90%; height: 90%;}
+    @media (min-width: 1100px) {width: 1140px;}    
 `
 
 const Side = styled.div`
     display: flex;
-    flex-direction: row;
-    flex-shrink: 0;
     flex-grow: 1;
-    @media (max-width: 992px){display: flex; flex-direction: column;}
+    
+    @media (min-width: 320px) {flex-direction: column; align-items: space-between;}
+    @media (min-width: 992px) {flex-direction: row; justify-content: space-between;}
 `
 
 export { HomeContainer, HomeContent, Side }

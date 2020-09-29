@@ -1,5 +1,6 @@
 import React from 'react';
 import { render, cleanup } from '@testing-library/react';
+import { BrowserRouter as Router } from 'react-router-dom';
 
 import Home from '../../../../pages/Home';
 
@@ -8,7 +9,9 @@ describe('Home', () => {
 
     test('should render correctly', () => {
         const { asFragment } = render(
-          <Home />
+          <Router>
+            <Home />
+          </Router>
         );
     
         expect(asFragment()).toBeDefined();

@@ -1,9 +1,14 @@
 import React from 'react';
 
+import { EducationContainer } from './styled';
+import Title from 'components/UI/Title';
+
 const Education = () => {
 
   return (
-    <div>Education</div>
+    <EducationContainer>
+      <Title h1 content={'Education'} maxFontSize={'52'} minFontSize={'30'} />
+    </EducationContainer>
   );
 }
 
