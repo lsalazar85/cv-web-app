@@ -8,7 +8,7 @@ const SpinnerContainer = styled.div`
     width: 100vw;
     height: 100vh;
     background: #1d1f21;
-    ${fadeIn({ time: '200ms' })};
+    ${fadeIn({ time: '400ms' })};
 `
 
 export { SpinnerContainer }

@@ -9,7 +9,7 @@ const MainContentContainer = styled.div`
     text-align: justify;
     scrollbar-width: thin;    
     scrollbar-color: rgba(136, 136, 136, 0.15) transparent;
-    ${fadeIn({time: '300ms'})};
+    ${fadeIn({time: '400ms'})};
 
     &::-webkit-scrollbar {
         width:  5px;
