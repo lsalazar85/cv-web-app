@@ -5,7 +5,7 @@ MERN Web App
 
 ## Run Project
 
-## Frontend
+# Frontend
 
 ## Npm
 ```
@@ -19,7 +19,7 @@ MERN Web App
     yarn start
 ```
 
-## Backend
+# Backend
 
 ## Npm
 ```
