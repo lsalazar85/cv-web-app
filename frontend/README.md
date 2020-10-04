@@ -1,30 +1,27 @@
 # My Curriculum Vitae Web App
 
-MERN Web App
+Web app developed in React.js
 
 
 ## Run Project
 
-## Frontend
-
-### Npm
+## Npm
 ```
     npm install
     npm start
 ```
 
-### Yarn
+## Yarn
 ```
     yarn install
     yarn start
 ```
 
-## Backend
+Starts on `http://localhost:3000`
 
-### Npm
+## Build
 ```
-    npm install
-    npm start
+    npm run build
 ```
 
 ## Development Technologies
