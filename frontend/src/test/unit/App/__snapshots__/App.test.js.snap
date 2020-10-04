@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App should render correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-gtssRu ldqdcV"
+  >
+    <div
+      class="sc-bdnylx cqzVrm"
+      width="50px"
+    >
+      <img
+        alt="Loaging"
+        src="https://icon-library.com/images/loading-icon-transparent-background/loading-icon-transparent-background-3.jpg"
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;

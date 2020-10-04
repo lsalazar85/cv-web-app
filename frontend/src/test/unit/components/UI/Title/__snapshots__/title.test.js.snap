@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Title should render correctly with h1 1`] = `
+<DocumentFragment>
+  <div>
+    <h1
+      class="sc-bdnylx fVxqlK"
+    >
+      Luis Salazar
+    </h1>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Title should render correctly with h2 1`] = `
+<DocumentFragment>
+  <div>
+    <h2
+      class="sc-gtssRu bxTyHR"
+    >
+      Luis Salazar
+    </h2>
+  </div>
+</DocumentFragment>
+`;
