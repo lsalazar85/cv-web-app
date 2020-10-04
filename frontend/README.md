@@ -1,4 +1,4 @@
-# FrontEnd - My Curriculum Vitae Web App
+# Frontend - My Curriculum Vitae Web App
 
 Web app developed in React.js
 
