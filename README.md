@@ -5,23 +5,23 @@ MERN Web App
 
 ## Run Project
 
-# Frontend
+## Frontend
 
-## Npm
+### Npm
 ```
     npm install
     npm start
 ```
 
-## Yarn
+### Yarn
 ```
     yarn install
     yarn start
 ```
 
-# Backend
+## Backend
 
-## Npm
+### Npm
 ```
     npm install
     npm start
