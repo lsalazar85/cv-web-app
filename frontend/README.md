@@ -1,4 +1,4 @@
-# My Curriculum Vitae Web App
+# FrontEnd - My Curriculum Vitae Web App
 
 Web app developed in React.js
 
@@ -31,7 +31,4 @@ Starts on `http://localhost:3000`
 * React Context State
 * React Testing Library & Jest
 * Styled-Components Package
-* Node.js
-* Express.js
-* Lodash
 
