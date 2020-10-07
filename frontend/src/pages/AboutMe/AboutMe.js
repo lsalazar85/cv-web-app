@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaGithub, FaNodeJs, FaJira } from "react-icons/fa";
+import { FaGithub, FaNodeJs, FaJira, FaGitkraken } from "react-icons/fa";
 import { GrGraphQl } from "react-icons/gr";
 import { SiJest, SiLogitech, SiTypescript, SiSlack, SiStyledComponents } from "react-icons/si";
 
@@ -62,11 +62,12 @@ const myTools = [
     { id: 4, icon: <DiMozilla />},
     { id: 5, icon: <DiGoogleDrive />},
     { id: 6, icon: <FaGithub />},
-    { id: 7, icon: <DiTerminal />},
-    { id: 8, icon: <DiTrello />},
-    { id: 9, icon: <FaJira />},
-    { id: 10, icon: <SiSlack />},
-    { id: 11, icon: <SiLogitech />},
+    { id: 7, icon: <FaGitkraken />},
+    { id: 8, icon: <DiTerminal />},
+    { id: 9, icon: <DiTrello />},
+    { id: 10, icon: <FaJira />},
+    { id: 11, icon: <SiSlack />},
+    { id: 12, icon: <SiLogitech />},
 ]
 
 
