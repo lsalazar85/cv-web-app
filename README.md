@@ -1,6 +1,6 @@
-# My Curriculum Vitae Web App
+# My Resume Vitae Web App
 
-MERN Web App
+Web app developed in React.js & Node - Express
 
 
 ## Run Project
