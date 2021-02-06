@@ -6,7 +6,6 @@ const MainContentContainer = styled.div`
     flex: 2;
     height: 100%;
     overflow: auto;
-    text-align: justify;
     scrollbar-width: thin;    
     scrollbar-color: rgba(136, 136, 136, 0.15) transparent;
     ${fadeIn({time: '400ms'})};

@@ -1,7 +1,7 @@
 import React from 'react';
-import { FaGithub, FaNodeJs, FaJira, FaGitkraken } from "react-icons/fa";
-import { GrGraphQl } from "react-icons/gr";
-import { SiJest, SiLogitech, SiTypescript, SiSlack, SiStyledComponents } from "react-icons/si";
+import { FaGithub, FaNodeJs, FaJira, FaGitkraken, FaVuejs } from "react-icons/fa";
+import { SiJest, SiLogitech, SiTypescript, SiSlack, SiStyledComponents, SiWebstorm } from "react-icons/si";
+import { IoLogoGameControllerB, IoIosBeer, IoIosBicycle, IoIosBasketball } from 'react-icons/io';
 
 import { 
     DiJavascript1, 
@@ -13,7 +13,6 @@ import {
     DiBootstrap,
     DiNpm,
     DiApple,
-    DiVisualstudio,
     DiTrello,
     DiMozilla,
     DiChrome,
@@ -44,9 +43,6 @@ const MY_SKILLS = [
     { id: 2, icon: <DiReact />},
     { id: 3, icon: <FaNodeJs />},
     { id: 4, icon: <DiNpm/>},
-    { id: 5, icon: <GrGraphQl />},
-    { id: 6, icon: <SiTypescript />},
-    { id: 7, icon: <DiMongodb />},
     { id: 8, icon: <SiStyledComponents />},
     { id: 9, icon: <DiHtml5 />},
     { id: 10, icon: <DiCss3 />},
@@ -57,9 +53,15 @@ const MY_SKILLS = [
     { id: 15, icon: <DiGit />},
 ]
 
+const ALTERNATIVES_SKILLS = [
+    { id: 1, icon: <FaVuejs />},
+    { id: 2, icon: <SiTypescript />},
+    { id: 3, icon: <DiMongodb />},
+]
+
 const MY_TOOLS = [
     { id: 1, icon: <DiApple />},
-    { id: 2, icon: <DiVisualstudio />},
+    { id: 2, icon: <SiWebstorm />},
     { id: 3, icon: <DiChrome />},
     { id: 4, icon: <DiMozilla />},
     { id: 5, icon: <DiGoogleDrive />},
@@ -77,6 +79,13 @@ const WHAT_I_DO = [
     {id: 2, icon: <DiApple />, description: 'hola2'},
     {id: 3, icon: <DiApple />, description: 'hola3'},
     {id: 4, icon: <DiApple />, description: 'hola4'},
+]
+
+const FUN_FACTS = [
+    {id: 1, icon: <IoLogoGameControllerB /> },
+    {id: 2, icon: <IoIosBeer /> },
+    {id: 3, icon: <IoIosBicycle /> },
+    {id: 4, icon: <IoIosBasketball /> },
 ]
 
 
@@ -112,7 +121,7 @@ const AboutMe = () => {
                 </List>
             </Card>
             <Card>
-                <Title h2 content={'My Skills'} maxFontSize={'21'} minFontSize={'18'} />
+                <Title h2 content={'Main Skills'} maxFontSize={'21'} minFontSize={'18'} />
                 <List>
                     {
                         MY_SKILLS.map(item => (
@@ -122,7 +131,24 @@ const AboutMe = () => {
                 </List>
             </Card>
             <Card>
+                <Title h2 content={'Alternative Technologies'} maxFontSize={'21'} minFontSize={'18'} />
+                <List>
+                    {
+                        ALTERNATIVES_SKILLS.map(item => (
+                            <li key={item.id}>{item.icon}</li>
+                        ))
+                    }
+                </List>
+            </Card>
+            <Card>
                 <Title h2 content={'Fun Facts'} maxFontSize={'21'} minFontSize={'18'} />
+                <List>
+                    {
+                        FUN_FACTS.map(item => (
+                            <li key={item.id}>{item.icon}</li>
+                        ))
+                    }
+                </List>
             </Card>
         </AboutMeContainer>
     )
