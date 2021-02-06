@@ -1,4 +1,4 @@
-# My Resume Vitae Web App
+# My Resume Web App
 
 Web app developed in React.js & Node - Express
 
