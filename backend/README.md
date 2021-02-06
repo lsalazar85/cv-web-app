@@ -1,6 +1,6 @@
-# Backend - My Curriculum Vitae Web App
+# Backend - My Resume Vitae Web App
 
-Web app developed in React.js
+Web app developed in React.js & Node - Express
 
 ## Run Project
 
@@ -20,5 +20,4 @@ Starts on `http://localhost:5000`
 ## Development Technologies
 * Node.js
 * Express
-* MongoDB
 

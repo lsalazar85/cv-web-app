@@ -1,6 +1,6 @@
-# Frontend - My Curriculum Vitae Web App
+# Frontend - My Resume Web App
 
-Web app developed in React.js
+Web app developed in React.js & Node - Express
 
 
 ## Run Project
@@ -30,5 +30,5 @@ Starts on `http://localhost:3000`
 * React Hooks
 * React Context State
 * React Testing Library & Jest
-* Styled-Components Package
+* Styled-Components 
 

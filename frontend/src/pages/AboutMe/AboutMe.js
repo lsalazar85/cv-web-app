@@ -25,6 +25,8 @@ import {
 
 import Title from 'components/UI/Title';
 import Card from 'components/UI/Card';
+import BoxIcon from 'components/UI/BoxIcon';
+import { BoxIconList } from 'components/UI/BoxIcon/styled';
 import { AboutMeContainer, List } from './styled';
 
 const ABOUT_ME  = {
@@ -37,7 +39,7 @@ const ABOUT_ME  = {
     ],
 }
 
-const mySkills = [
+const MY_SKILLS = [
     { id: 1, icon: <DiJavascript1 />},
     { id: 2, icon: <DiReact />},
     { id: 3, icon: <FaNodeJs />},
@@ -55,7 +57,7 @@ const mySkills = [
     { id: 15, icon: <DiGit />},
 ]
 
-const myTools = [
+const MY_TOOLS = [
     { id: 1, icon: <DiApple />},
     { id: 2, icon: <DiVisualstudio />},
     { id: 3, icon: <DiChrome />},
@@ -68,6 +70,13 @@ const myTools = [
     { id: 10, icon: <FaJira />},
     { id: 11, icon: <SiSlack />},
     { id: 12, icon: <SiLogitech />},
+]
+
+const WHAT_I_DO = [
+    {id: 1, icon: <DiApple />, description: 'hola1'},
+    {id: 2, icon: <DiApple />, description: 'hola2'},
+    {id: 3, icon: <DiApple />, description: 'hola3'},
+    {id: 4, icon: <DiApple />, description: 'hola4'},
 ]
 
 
@@ -84,12 +93,19 @@ const AboutMe = () => {
             </Card>
             <Card>
                 <Title h2 content={'What I Do'} maxFontSize={'21'} minFontSize={'18'} />
+                <BoxIconList>
+                    {
+                        WHAT_I_DO && WHAT_I_DO.map(item => (
+                            <BoxIcon key={item.id} icon={item.icon} description={item.description} />
+                        ))
+                    }
+                </BoxIconList>
             </Card>
             <Card>
                 <Title h2 content={'My Tools'} maxFontSize={'21'} minFontSize={'18'} />
                 <List>
                     {
-                       myTools.map(item => (
+                        MY_TOOLS.map(item => (
                            <li key={item.id}>{item.icon}</li>
                        )) 
                     }
@@ -99,7 +115,7 @@ const AboutMe = () => {
                 <Title h2 content={'My Skills'} maxFontSize={'21'} minFontSize={'18'} />
                 <List>
                     {
-                       mySkills.map(item => (
+                        MY_SKILLS.map(item => (
                            <li key={item.id}>{item.icon}</li>
                        )) 
                     }
