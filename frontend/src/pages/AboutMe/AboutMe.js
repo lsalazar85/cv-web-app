@@ -1,7 +1,7 @@
 import React from 'react';
-import { FaGithub, FaNodeJs, FaJira, FaGitkraken, FaVuejs } from "react-icons/fa";
+import { FaGithub, FaNodeJs, FaJira, FaGitkraken, FaVuejs, FaLaptopCode } from "react-icons/fa";
 import { SiJest, SiLogitech, SiTypescript, SiSlack, SiStyledComponents, SiWebstorm } from "react-icons/si";
-import { IoLogoGameControllerB, IoIosBeer, IoIosBicycle, IoIosBasketball } from 'react-icons/io';
+import { IoLogoGameControllerB, IoIosBeer, IoIosBicycle, IoIosBasketball, IoIosRocket } from 'react-icons/io';
 
 import { 
     DiJavascript1, 
@@ -21,6 +21,9 @@ import {
     DiMongodb,
     DiTerminal,
 } from "react-icons/di";
+
+import { MdDevicesOther } from 'react-icons/md';
+import { TiPencil } from 'react-icons/ti';
 
 import Title from 'components/UI/Title';
 import Card from 'components/UI/Card';
@@ -75,10 +78,10 @@ const MY_TOOLS = [
 ]
 
 const WHAT_I_DO = [
-    {id: 1, icon: <DiApple />, description: 'hola1'},
-    {id: 2, icon: <DiApple />, description: 'hola2'},
-    {id: 3, icon: <DiApple />, description: 'hola3'},
-    {id: 4, icon: <DiApple />, description: 'hola4'},
+    {id: 1, icon: <FaLaptopCode />, title: 'Custom Web Apps', description: 'I develop dedicated applications with an efficient and functional front-end.'},
+    {id: 2, icon: <TiPencil />, title: 'UX/UI Analysis', description: 'I develop dedicated applications with an efficient and functional front-end.'},
+    {id: 3, icon: <IoIosRocket />, title: 'Advance Development', description: 'I develop dedicated applications with an efficient and functional front-end.'},
+    {id: 4, icon: <MdDevicesOther />, title: 'Multi Devices', description: 'I develop dedicated applications with an efficient and functional front-end.'},
 ]
 
 const FUN_FACTS = [
@@ -105,7 +108,7 @@ const AboutMe = () => {
                 <BoxIconList>
                     {
                         WHAT_I_DO && WHAT_I_DO.map(item => (
-                            <BoxIcon key={item.id} icon={item.icon} description={item.description} />
+                            <BoxIcon key={item.id} icon={item.icon} title={item.title} description={item.description} />
                         ))
                     }
                 </BoxIconList>
@@ -141,7 +144,7 @@ const AboutMe = () => {
                 </List>
             </Card>
             <Card>
-                <Title h2 content={'Fun Facts'} maxFontSize={'21'} minFontSize={'18'} />
+                <Title h2 content={'My Hobbies'} maxFontSize={'21'} minFontSize={'18'} />
                 <List>
                     {
                         FUN_FACTS.map(item => (
