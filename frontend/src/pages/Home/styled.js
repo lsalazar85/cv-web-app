@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-const HomeContainer = styled.div`
+const HomeContainer = styled.main`
     display: flex;
     flex-direction: column; 
     align-items: center;
@@ -9,7 +9,7 @@ const HomeContainer = styled.div`
     color: #888888;
     height: 100vh;
 `
-const HomeContent = styled.div`
+const HomeContent = styled.section`
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -23,7 +23,7 @@ const HomeContent = styled.div`
     @media (min-width: 1100px) {width: 1140px;}    
 `
 
-const Side = styled.div`
+const Side = styled.section`
     display: flex;
     flex-grow: 1;
     

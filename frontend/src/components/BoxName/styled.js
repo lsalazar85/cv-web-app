@@ -31,7 +31,7 @@ const BoxNameAvatar = styled.div`
 
 `
 
-const BoxNameContent = styled.div`
+const BoxNameContent = styled.section`
     display: flex;
     color: #ffffff;
     line-height: 1.17;

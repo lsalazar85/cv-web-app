@@ -89,7 +89,7 @@ const ModalHeader = styled.header`
   }
 `;
 
-const ModalContent = styled.div`
+const ModalContent = styled.section`
   @media(min-width: 320px){
     flex: 1 1 auto;
     overflow: auto;

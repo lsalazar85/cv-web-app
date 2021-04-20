@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { fadeIn } from 'styles/animation';
 
-const MainContentContainer = styled.div`
+const MainContentContainer = styled.main`
     display: flex;
     flex: 2;
     height: 100%;
