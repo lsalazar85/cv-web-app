@@ -1,27 +1,48 @@
-import React from 'react';
-import { bool, node, func, string } from 'prop-types';
-import { Transition } from 'react-transition-group';
+import React from 'react'
+import { bool, node, func, string } from 'prop-types'
+import { Transition } from 'react-transition-group'
 
-import { CloseModalIcon, Animation, ModalOverlay, MainModal, ModalHeader, ModalContent, ModalFooter } from './styled';
+import {
+  CloseModalIcon,
+  Animation,
+  ModalOverlay,
+  MainModal,
+  ModalHeader,
+  ModalContent,
+  ModalFooter,
+} from './styled'
 
-const Modal = ({ width, closeModal, title, show, onClose, content, footer, positionButtons }) => (
-    <Transition in={show} timeout={500} unmountOnExit mountOnEnter>
-      {state => (
-        <Animation state={state}>
-          <ModalOverlay onClick={onClose} />
-          <MainModal width={width}>
-            {title && (
-              <ModalHeader>
-                <h3>{title}</h3>
-              </ModalHeader>
-            )}
-            {closeModal && <CloseModalIcon onClick={onClose} data-testid="close-modal" />}
-            {content && <ModalContent>{content}</ModalContent>}
-            {footer && <ModalFooter position={positionButtons}>{footer}</ModalFooter>}
-          </MainModal>
-        </Animation>
-      )}
-    </Transition>
+const Modal = ({
+  width,
+  closeModal,
+  title,
+  show,
+  onClose,
+  content,
+  footer,
+  positionButtons,
+}) => (
+  <Transition in={show} timeout={500} unmountOnExit mountOnEnter>
+    {(state) => (
+      <Animation state={state}>
+        <ModalOverlay onClick={onClose} />
+        <MainModal width={width}>
+          {title && (
+            <ModalHeader>
+              <h3>{title}</h3>
+            </ModalHeader>
+          )}
+          {closeModal && (
+            <CloseModalIcon onClick={onClose} data-testid="close-modal" />
+          )}
+          {content && <ModalContent>{content}</ModalContent>}
+          {footer && (
+            <ModalFooter position={positionButtons}>{footer}</ModalFooter>
+          )}
+        </MainModal>
+      </Animation>
+    )}
+  </Transition>
 )
 
 Modal.defaultProps = {
@@ -31,7 +52,7 @@ Modal.defaultProps = {
   closeModal: false,
   footer: '',
   content: '',
-};
+}
 
 Modal.propTypes = {
   width: string,
@@ -42,6 +63,6 @@ Modal.propTypes = {
   onClose: func.isRequired,
   footer: node,
   content: node,
-};
+}
 
-export default Modal;
+export default Modal

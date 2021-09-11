@@ -1,1 +1,1 @@
-export { default } from './BoxName';
+export { default } from './BoxName'

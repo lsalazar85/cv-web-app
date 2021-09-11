@@ -44,7 +44,10 @@
     "test": "react-scripts test --coverage --updateSnapshot --watchAll=false",
     "eject": "react-scripts eject",
     "scss": "node-sass — watch scss -o css",
-    "deploy": "node deploy"
+    "deploy": "node deploy",
+    "prepare": "husky install",
+    "lint": "eslint . --max-warnings=0 --no-ignore",
+    "prettier": "prettier -w --config .prettierrc.json './**/*.{js,jsx}'"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -58,10 +61,30 @@
   "devDependencies": {
     "@testing-library/react": "^12.1.0",
     "@testing-library/react-hooks": "^7.0.2",
+    "babel-eslint": "^7.2.3",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.25.1",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "husky": "^7.0.2",
     "jsdom": "^17.0.0",
     "jsdom-global": "^3.0.2",
+    "lint-staged": "^11.1.2",
     "node-sass": "^6.0.1",
+    "prettier": "^2.4.0",
     "react-test-renderer": "^17.0.2",
     "sass-loader": "^12.1.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx,json}": [
+      "npm run prettier",
+      "npm run lint"
+    ]
   }
 }

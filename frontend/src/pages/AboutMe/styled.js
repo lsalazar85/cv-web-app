@@ -1,14 +1,14 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 const AboutMeContainer = styled.div`
-    display: flex;
-    flex-direction: column;
-    flex: 1;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 `
 
 const ListWrapper = styled.ul`
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 `
 
 const List = styled.li`
@@ -17,22 +17,22 @@ const List = styled.li`
   justify-content: space-around;
   margin-bottom: 18px;
 
-  @media (min-width: 320px){
+  @media (min-width: 320px) {
     width: 33.33%;
   }
 
-  @media (min-width: 768px){
+  @media (min-width: 768px) {
     width: 25%;
   }
 
-  svg{
+  svg {
     height: auto;
 
-    @media (min-width: 320px){
+    @media (min-width: 320px) {
       width: 50px;
     }
 
-    @media (min-width: 768px){
+    @media (min-width: 768px) {
       width: 60px;
     }
   }
@@ -46,4 +46,4 @@ const TextParagraph = styled.p`
   }
 `
 
-export { AboutMeContainer, ListWrapper, List, TextParagraph}
+export { AboutMeContainer, ListWrapper, List, TextParagraph }
