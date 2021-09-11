@@ -49,13 +49,13 @@ exports[`Modal Modal should render correctly with others props 1`] = `
         class="sc-gtssRu gIbjpE"
         data-testid="close-modal"
       />
-      <div
+      <section
         class="sc-jSFkmK jdyFSc"
       >
         <div>
           content
         </div>
-      </div>
+      </section>
       <footer
         class="sc-gKAblj bFFacn"
       >

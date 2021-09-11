@@ -1,12 +1,11 @@
 import styled from 'styled-components';
-import { fadeIn } from 'styles/animation';
+import { fadeIn } from '../../styles/animation';
 
-const MainContentContainer = styled.div`
+const MainContentContainer = styled.main`
     display: flex;
     flex: 2;
     height: 100%;
     overflow: auto;
-    text-align: justify;
     scrollbar-width: thin;    
     scrollbar-color: rgba(136, 136, 136, 0.15) transparent;
     ${fadeIn({time: '400ms'})};
