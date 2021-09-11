@@ -29,7 +29,7 @@ import Title from '../../components/UI/Title';
 import Card from '../../components/UI/Card';
 import BoxIcon from '../../components/UI/BoxIcon';
 import { BoxIconList } from '../../components/UI/BoxIcon/styled';
-import { AboutMeContainer, List } from './styled';
+import { AboutMeContainer, ListWrapper, List, TextParagraph } from './styled';
 
 const ABOUT_ME  = {
     introduction: [
@@ -99,7 +99,7 @@ const AboutMe = () => {
             <Card>
                 {
                     ABOUT_ME && ABOUT_ME.introduction.map(item => (
-                        <p key={item.id}>{item.content}</p>
+                        <TextParagraph key={item.id}>{item.content}</TextParagraph>
                     ))
                 }
             </Card>
@@ -115,43 +115,43 @@ const AboutMe = () => {
             </Card>
             <Card>
                 <Title h2 content={'My Tools'} maxFontSize={'21'} minFontSize={'18'} />
-                <List>
+                <ListWrapper>
                     {
                         MY_TOOLS.map(item => (
-                           <li key={item.id}>{item.icon}</li>
+                           <List key={item.id}>{item.icon}</List>
                        )) 
                     }
-                </List>
+                </ListWrapper>
             </Card>
             <Card>
                 <Title h2 content={'Main Skills'} maxFontSize={'21'} minFontSize={'18'} />
-                <List>
+                <ListWrapper>
                     {
                         MY_SKILLS.map(item => (
-                           <li key={item.id}>{item.icon}</li>
+                           <List key={item.id}>{item.icon}</List>
                        )) 
                     }
-                </List>
+                </ListWrapper>
             </Card>
             <Card>
                 <Title h2 content={'Alternative Technologies'} maxFontSize={'21'} minFontSize={'18'} />
-                <List>
+                <ListWrapper>
                     {
                         ALTERNATIVES_SKILLS.map(item => (
-                            <li key={item.id}>{item.icon}</li>
+                            <List key={item.id}>{item.icon}</List>
                         ))
                     }
-                </List>
+                </ListWrapper>
             </Card>
             <Card>
                 <Title h2 content={'My Hobbies'} maxFontSize={'21'} minFontSize={'18'} />
-                <List>
+                <ListWrapper>
                     {
                         FUN_FACTS.map(item => (
-                            <li key={item.id}>{item.icon}</li>
+                            <List key={item.id}>{item.icon}</List>
                         ))
                     }
-                </List>
+                </ListWrapper>
             </Card>
         </AboutMeContainer>
     )
