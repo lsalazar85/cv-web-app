@@ -25,10 +25,10 @@ import {
 import { MdDevicesOther } from 'react-icons/md';
 import { TiPencil } from 'react-icons/ti';
 
-import Title from 'components/UI/Title';
-import Card from 'components/UI/Card';
-import BoxIcon from 'components/UI/BoxIcon';
-import { BoxIconList } from 'components/UI/BoxIcon/styled';
+import Title from '../../components/UI/Title';
+import Card from '../../components/UI/Card';
+import BoxIcon from '../../components/UI/BoxIcon';
+import { BoxIconList } from '../../components/UI/BoxIcon/styled';
 import { AboutMeContainer, List } from './styled';
 
 const ABOUT_ME  = {

@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { fadeIn } from 'styles/animation';
+import { fadeIn } from '../../../styles/animation';
 
 const SpinnerContainer = styled.div`
     display: flex;

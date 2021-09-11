@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Image from 'components/UI/Image';
+import Image from '../Image';
 import { SpinnerContainer } from './styled';
 
 const Spinner = () => (

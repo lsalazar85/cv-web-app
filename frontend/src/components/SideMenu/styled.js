@@ -45,7 +45,7 @@ const SideIcons = styled.div`
    ul {
         li {
             margin-bottom: 45px;
-            &:last-child{margin-bottom: 0px;}
+            &:last-child{margin-bottom: 0;}
         }
    }
 `

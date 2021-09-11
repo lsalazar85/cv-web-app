@@ -1,9 +1,9 @@
 import React from 'react';
 import { FaInstagram, FaLinkedinIn, FaGithub } from "react-icons/fa";
 
-import { MY_PHOTO } from 'constans';
-import Image from 'components/UI/Image/Image';
-import Title from 'components/UI/Title';
+import { MY_PHOTO } from '../../constans';
+import Image from '../../components/UI/Image/Image';
+import Title from '../../components/UI/Title';
 import { BoxNameContainer, BoxNameContent, BoxNameAvatar } from './styled';
 
 const SOCIAL_MEDIA = [
