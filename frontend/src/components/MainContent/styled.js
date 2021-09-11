@@ -35,9 +35,10 @@ const MainContentContainer = styled.main`
 
     p {
         margin-bottom: 16px;
+        background: red;
 
         &:last-child {
-            margin-bottom: 0px;
+            margin-bottom: 0;
         }
     }
 `

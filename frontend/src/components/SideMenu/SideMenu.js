@@ -9,7 +9,7 @@ import {
     VscCloudDownload
 } from "react-icons/vsc";
 
-import { SideMenuContainer, SideIcons } from './styled';
+import { SideMenuContainer, SideIcons, SideIconsWrapper, SideIconList } from './styled';
 
 const ICONS = [
     { id: 1, icon: <VscAccount />, url:'/'},
@@ -22,11 +22,11 @@ const SideMenu = () => {
     return(
         <SideMenuContainer>
             <SideIcons position={'center'}>
-                <ul>
+                <SideIconsWrapper>
                     { ICONS.map(item => (
-                        <li key={item.id}><NavLink exact to={item.url}>{item.icon}</NavLink></li>
+                        <SideIconList key={item.id}><NavLink exact to={item.url}>{item.icon}</NavLink></SideIconList>
                     ))}
-                </ul>
+                </SideIconsWrapper>
             </SideIcons>
             <SideIcons position={'flex-end'} padddingBotton={32}>
                 <VscCloudDownload />
