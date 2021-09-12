@@ -1,23 +1,23 @@
-import React from 'react';
-import { string, bool } from 'prop-types';
+import React from 'react'
+import { string, bool } from 'prop-types'
 
-import { ImageContainer } from './styled';
+import { ImageContainer, ImageElement } from './styled';
 
 const Image = ({ width, alt, src, circular }) => (
     <ImageContainer width={width} circular={circular}>
-        <img src={src} alt={alt}/>
+        <ImageElement circular={circular} src={src} alt={alt}/>
     </ImageContainer>
 )
 
 Image.defaultProps = {
-    circular: false,
+  circular: false,
 }
 
 Image.propTypes = {
-    width: string.isRequired,
-    src: string.isRequired,
-    alt: string.isRequired,
-    circular: bool,
+  width: string.isRequired,
+  src: string.isRequired,
+  alt: string.isRequired,
+  circular: bool,
 }
 
-export default Image;
+export default Image

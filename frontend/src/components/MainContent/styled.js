@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { fadeIn } from '../../styles/animation';
+import styled from 'styled-components'
+import { fadeIn } from '../../styles/animation'
 
 const MainContentContainer = styled.main`
     display: flex;
@@ -31,14 +31,6 @@ const MainContentContainer = styled.main`
         background: transparent;
         padding: 32px;
         max-width: 624px;
-    }
-
-    p {
-        margin-bottom: 16px;
-
-        &:last-child {
-            margin-bottom: 0px;
-        }
     }
 `
 
