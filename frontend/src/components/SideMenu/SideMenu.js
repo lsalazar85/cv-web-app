@@ -1,13 +1,13 @@
-import React from 'react';
-import {  NavLink } from 'react-router-dom';
-import { RiMailSendLine } from "react-icons/ri";
+import React from 'react'
+import { NavLink } from 'react-router-dom'
+import { RiMailSendLine } from 'react-icons/ri'
 
-import { 
-    VscAccount, 
-    VscBriefcase,
-    VscBook,
-    VscCloudDownload
-} from "react-icons/vsc";
+import {
+  VscAccount,
+  VscBriefcase,
+  VscBook,
+  VscCloudDownload,
+} from 'react-icons/vsc'
 
 import {
     SideMenuContainer,
@@ -17,10 +17,10 @@ import {
 } from './styled';
 
 const ICONS = [
-    { id: 1, icon: <VscAccount />, url:'/'},
-    { id: 2, icon: <VscBook />, url:'/education'},
-    { id: 3, icon: <VscBriefcase />, url:'/work-experience'},
-    { id: 4, icon: <RiMailSendLine />, url:'/contact'},
+  { id: 1, icon: <VscAccount />, url: '/' },
+  { id: 2, icon: <VscBook />, url: '/education' },
+  { id: 3, icon: <VscBriefcase />, url: '/work-experience' },
+  { id: 4, icon: <RiMailSendLine />, url: '/contact' },
 ]
 
 const SideMenu = () => {

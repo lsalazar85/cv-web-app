@@ -7,7 +7,7 @@ const PersonalData = [
     phone: '1234567890',
     skype: 'persona.ejemplo',
     age: 31,
-    state: 'soltero'
-  }
+    state: 'soltero',
+  },
 ]
-export default (PersonalData)
+export default PersonalData

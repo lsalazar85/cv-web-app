@@ -1,5 +1,5 @@
-import React from 'react';
-import { FaInstagram, FaLinkedinIn, FaGithub } from "react-icons/fa";
+import React from 'react'
+import { FaInstagram, FaLinkedinIn, FaGithub } from 'react-icons/fa'
 
 import { MY_PHOTO } from '../../constans';
 import Image from '../../components/UI/Image/Image';
@@ -14,9 +14,18 @@ import {
     BoxNameLink
 } from './styled';
 
+
 const SOCIAL_MEDIA = [
-  { id: 1, icon: <FaInstagram />, url: 'https://www.instagram.com/lanzaroth.js/' },
-  { id: 2, icon: <FaLinkedinIn/>, url: 'https://www.linkedin.com/in/lsalazar85/' },
+  {
+    id: 1,
+    icon: <FaInstagram />,
+    url: 'https://www.instagram.com/lanzaroth.js/',
+  },
+  {
+    id: 2,
+    icon: <FaLinkedinIn />,
+    url: 'https://www.linkedin.com/in/lsalazar85/',
+  },
   { id: 3, icon: <FaGithub />, url: 'https://github.com/lsalazar85' },
 ]
 
@@ -39,6 +48,6 @@ const BoxName = () => (
       </BoxNameListContent>
     </BoxNameContent>
   </BoxNameContainer>
-);
+)
 
-export default BoxName;
+export default BoxName

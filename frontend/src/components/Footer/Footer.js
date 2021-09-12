@@ -1,5 +1,5 @@
-import React from 'react';
-import { FaCode, FaReact } from "react-icons/fa";
+import React from 'react'
+import { FaCode, FaReact } from 'react-icons/fa'
 
 import { FooterContainer, FooterText, FooterLink } from './styled';
 
@@ -14,4 +14,4 @@ const Footer = () => (
     </FooterContainer>
 )
 
-export default Footer;
+export default Footer

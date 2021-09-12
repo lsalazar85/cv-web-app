@@ -15,6 +15,6 @@ const Technologies = [
     html: 'HTML5',
     css: 'CSS3',
     gitHub: 'GitHub',
-  }
+  },
 ]
-export default (Technologies)
+export default Technologies

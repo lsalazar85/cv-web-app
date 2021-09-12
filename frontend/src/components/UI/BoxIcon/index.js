@@ -1,1 +1,1 @@
-export { default } from './BoxIcon';
+export { default } from './BoxIcon'

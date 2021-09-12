@@ -1,40 +1,42 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 const BoxNameContainer = styled.div`
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  background: none;
+
+  @media (min-width: 320px) {
+    padding: 15px 15px 15px 0;
+    justify-content: flex-start;
     background: none;
+  }
 
-    @media(min-width: 320px){
-        padding: 15px 15px 15px 0;
-        justify-content: flex-start;
-        background: none;
-    }
-
-    @media(min-width: 992px) {
-        flex: 1.5;
-        padding: 0px;
-        justify-content: space-between;
-        background: #1c1c1c;
-        padding: 0 0 32px 0;
-    }
+  @media (min-width: 992px) {
+    flex: 1.5;
+    justify-content: space-between;
+    background: #1c1c1c;
+    padding: 0 0 32px 0;
+  }
 `
 
 const BoxNameAvatar = styled.div`
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: 320px) {
+    display: none;
+  }
+  @media (min-width: 992px) {
     display: flex;
-    flex: 1;
-    justify-content: center;
-    align-items: center;
-
-    @media(min-width: 320px){display:none;}
-    @media(min-width: 992px){display:flex;}
-
+  }
 `
 
 const BoxNameContent = styled.section`
-    display: flex;
-    color: #ffffff;
-    line-height: 1.17;
+  display: flex;
+  color: #ffffff;
+  line-height: 1.17;
 
     @media(min-width: 320px) {
         flex-direction: row;
@@ -91,3 +93,4 @@ export {
     BoxNameList,
     BoxNameLink
 }
+

@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { fadeIn } from '../../styles/animation';
+import styled from 'styled-components'
+import { fadeIn } from '../../styles/animation'
 
 const MainContentContainer = styled.main`
     display: flex;

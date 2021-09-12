@@ -1,6 +1,6 @@
-import React from 'react';
-import { bool, node, func, string } from 'prop-types';
-import { Transition } from 'react-transition-group';
+import React from 'react'
+import { bool, node, func, string } from 'prop-types'
+import { Transition } from 'react-transition-group'
 
 import {
   CloseModalIcon,
@@ -50,7 +50,7 @@ Modal.defaultProps = {
   closeModal: false,
   footer: '',
   content: '',
-};
+}
 
 Modal.propTypes = {
   width: string,
@@ -61,6 +61,6 @@ Modal.propTypes = {
   onClose: func.isRequired,
   footer: node,
   content: node,
-};
+}
 
-export default Modal;
+export default Modal

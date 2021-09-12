@@ -1,10 +1,11 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 const AboutMeContainer = styled.div`
-    display: flex;
-    flex-direction: column;
-    flex: 1;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 `
+
 const ListWrapper = styled.ul`
     display: flex;
     flex-wrap: wrap;
@@ -32,6 +33,7 @@ const List = styled.li`
     }
 
     @media (min-width: 768px){
+
       width: 60px;
     }
   }
@@ -46,3 +48,4 @@ const TextParagraph = styled.p`
 `
 
 export { AboutMeContainer, List, ListWrapper, TextParagraph }
+

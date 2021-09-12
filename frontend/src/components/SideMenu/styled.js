@@ -1,47 +1,57 @@
 import styled from 'styled-components'
 
 const SideMenuContainer = styled.aside`
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 
-    @media (min-width: 320px){padding: 0 15px;}
-    @media (min-width: 992px){padding: 0 32px;}
+  @media (min-width: 320px) {
+    padding: 0 15px;
+  }
+  @media (min-width: 992px) {
+    padding: 0 32px;
+  }
 `
 const SideIcons = styled.div`
-    display: flex;
-    flex-direction: column;
-    justify-content: ${props => props.position};
-    align-items: center;
-    height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: ${(props) => props.position};
+  align-items: center;
+  height: 100vh;
+  color: #ffffff;
+
+  &:last-child {
+    height: auto;
+    padding-bottom: 32px;
+  }
+
+  svg {
+    cursor: pointer;
     color: #ffffff;
+    opacity: 0.95;
+    transition: 0.25s;
 
-    &:last-child{
-        height: auto;
-        padding-bottom: 32px;
+    &:hover {
+      color: #3dba7d;
+      opacity: 1;
     }
 
+    @media (min-width: 320px) {
+      width: 1.7em;
+      height: 1.7em;
+    }
+    @media (min-width: 992px) {
+      width: 2em;
+      height: 2em;
+    }
+  }
+
+  a.active {
     svg {
-        cursor: pointer;
-        color: #ffffff;
-        opacity: 0.95;
-        transition: 0.25s;
-
-        &:hover {
-            color: #3dba7d;
-            opacity: 1;
-        }
-
-        @media (min-width: 320px) {width: 1.7em; height: 1.7em;}
-        @media (min-width: 992px) {width: 2em; height: 2em;}
-    }
-
-    a.active{
-        svg {
-            color: #3dba7d;
-            transform: scale(1.20);
-        }
+      color: #3dba7d;
+      transform: scale(1.2);
     }
 `
+
 const SideIconListWrapper = styled.ul`
   display: flex;
   flex-direction: column;
@@ -52,5 +62,5 @@ const SideIconList = styled.li`
   &:last-child{margin-bottom: 0;}
 `
 
-
 export { SideMenuContainer, SideIcons, SideIconListWrapper, SideIconList }
+

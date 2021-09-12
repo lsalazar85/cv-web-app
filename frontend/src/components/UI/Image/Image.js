@@ -1,5 +1,5 @@
-import React from 'react';
-import { string, bool } from 'prop-types';
+import React from 'react'
+import { string, bool } from 'prop-types'
 
 import { ImageContainer, ImageElement } from './styled';
 
@@ -10,14 +10,14 @@ const Image = ({ width, alt, src, circular }) => (
 )
 
 Image.defaultProps = {
-    circular: false,
+  circular: false,
 }
 
 Image.propTypes = {
-    width: string.isRequired,
-    src: string.isRequired,
-    alt: string.isRequired,
-    circular: bool,
+  width: string.isRequired,
+  src: string.isRequired,
+  alt: string.isRequired,
+  circular: bool,
 }
 
-export default Image;
+export default Image

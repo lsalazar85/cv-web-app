@@ -1,17 +1,14 @@
-import React from 'react';
-import { render, cleanup } from '@testing-library/react';
+import React from 'react'
+import { render, cleanup } from '@testing-library/react'
 
-import Footer from '../../../../components/Footer';
+import Footer from '../../../../components/Footer'
 
 describe('Footer', () => {
-    afterEach(cleanup);
+  afterEach(cleanup)
 
-    it('should render correctly', () => {
-        const { asFragment } = render(
-          <Footer />
-        );
-        expect(asFragment()).toBeDefined();
-        expect(asFragment()).toMatchSnapshot();
-    });
-
+  it('should render correctly', () => {
+    const { asFragment } = render(<Footer />)
+    expect(asFragment()).toBeDefined()
+    expect(asFragment()).toMatchSnapshot()
+  })
 })

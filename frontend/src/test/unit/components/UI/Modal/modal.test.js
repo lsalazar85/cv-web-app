@@ -1,22 +1,25 @@
-import React from 'react';
-import { render, cleanup } from '@testing-library/react';
+import React from 'react'
+import { render, cleanup } from '@testing-library/react'
 
-import Modal from '../../../../../components/UI/Modal';
-import { Animation, ModalFooter } from '../../../../../components/UI/Modal/styled';
+import Modal from '../../../../../components/UI/Modal'
+import {
+  Animation,
+  ModalFooter,
+} from '../../../../../components/UI/Modal/styled'
 
 describe('Modal', () => {
-  afterEach(cleanup);
+  afterEach(cleanup)
 
   it('Modal should render correctly', () => {
-    const { asFragment } = render(<Modal onClose={jest.fn()} show={true} />);
+    const { asFragment } = render(<Modal onClose={jest.fn()} show={true} />)
 
-    expect(asFragment()).toBeDefined();
-    expect(asFragment()).toMatchSnapshot();
-  });
+    expect(asFragment()).toBeDefined()
+    expect(asFragment()).toMatchSnapshot()
+  })
 
   it('Modal should render correctly with others props', () => {
-    const content = 'content';
-    const footer = 'footer';
+    const content = 'content'
+    const footer = 'footer'
 
     const { asFragment } = render(
       <Modal
@@ -26,39 +29,43 @@ describe('Modal', () => {
         title={'Modal Test File'}
         content={<div>{content}</div>}
         footer={<div>{footer}</div>}
-      />,
-    );
+      />
+    )
 
-    expect(asFragment()).toBeDefined();
-    expect(asFragment()).toMatchSnapshot();
-  });
-});
+    expect(asFragment()).toBeDefined()
+    expect(asFragment()).toMatchSnapshot()
+  })
+})
 
 // Styled Componentes Testing
 
 describe('ModalFooter', () => {
-  afterEach(cleanup);
+  afterEach(cleanup)
 
   it('ModalFooter should render correctly', () => {
-    const children = 'Modal';
+    const children = 'Modal'
 
-    const { asFragment } = render(<ModalFooter position={'flex-end'}>{children}</ModalFooter>);
+    const { asFragment } = render(
+      <ModalFooter position={'flex-end'}>{children}</ModalFooter>
+    )
 
-    expect(asFragment()).toBeDefined();
-    expect(asFragment()).toMatchSnapshot();
-  });
-});
+    expect(asFragment()).toBeDefined()
+    expect(asFragment()).toMatchSnapshot()
+  })
+})
 
 describe('Animation', () => {
-  afterEach(cleanup);
+  afterEach(cleanup)
 
   it('Animation should render correctly', () => {
-    const content = 'Animation';
-    const state = '';
+    const content = 'Animation'
+    const state = ''
 
-    const { asFragment } = render(<Animation state={state}>{content}</Animation>);
+    const { asFragment } = render(
+      <Animation state={state}>{content}</Animation>
+    )
 
-    expect(asFragment()).toBeDefined();
-    expect(asFragment()).toMatchSnapshot();
-  });
-});
+    expect(asFragment()).toBeDefined()
+    expect(asFragment()).toMatchSnapshot()
+  })
+})
