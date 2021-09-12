@@ -3,17 +3,20 @@ import {
   FaGithub,
   FaNodeJs,
   FaJira,
-  FaGitkraken,
   FaVuejs,
   FaLaptopCode,
 } from 'react-icons/fa'
 import {
-  SiJest,
+    SiPostman,
+    SiJest,
   SiLogitech,
   SiTypescript,
   SiSlack,
   SiStyledComponents,
   SiWebstorm,
+    SiNextDotJs,
+    SiRedux,
+    SiTravisci
 } from 'react-icons/si'
 import {
   IoLogoGameControllerB,
@@ -55,32 +58,31 @@ const ABOUT_ME = {
   introduction: [
     {
       id: 1,
-      content: `I'm a Front End Developer with 5+ years of professional experience, 
-            based in Buenos Aires - Argentina.`,
+      content: `I'm a Front End Developer with 6+ years of experience developing web applications for local and international companies.`,
     },
     {
       id: 2,
       content:
-        'Professionally connected with the web development industry and information technology.',
+        'I have strong experience in the development of massive applications that positively impact many users.',
     },
     {
       id: 3,
-      content:
-        'Building small and medium web apps with Javascript & React.js, features, animations, and coding interactive layouts.',
+      content: `I'm passionate about software engineering and making people's lives better with technology.`,
     },
     {
       id: 4,
       content:
-        'Interested in the entire full-stack spectrum and working on ambitious projects with positive people.',
+        'Interested in the entire full-stack spectrum and working on ambitious projects with dynamic and high-performance teams.',
     },
   ],
 }
 
 const MY_SKILLS = [
   { id: 1, icon: <DiJavascript1 /> },
-  { id: 2, icon: <DiReact /> },
-  { id: 3, icon: <FaNodeJs /> },
-  { id: 4, icon: <DiNpm /> },
+    { id: 2, icon: <SiTypescript /> },
+  { id: 3, icon: <DiReact /> },
+  { id: 4, icon: <SiNextDotJs /> },
+  { id: 5, icon: <DiNpm /> },
   { id: 8, icon: <SiStyledComponents /> },
   { id: 9, icon: <DiHtml5 /> },
   { id: 10, icon: <DiCss3 /> },
@@ -89,12 +91,14 @@ const MY_SKILLS = [
   { id: 13, icon: <DiBootstrap /> },
   { id: 14, icon: <SiJest /> },
   { id: 15, icon: <DiGit /> },
+    {id: 16, icon: <SiRedux/>}
 ]
 
 const ALTERNATIVES_SKILLS = [
   { id: 1, icon: <FaVuejs /> },
-  { id: 2, icon: <SiTypescript /> },
+  { id: 2, icon: <FaNodeJs /> },
   { id: 3, icon: <DiMongodb /> },
+    {id: 4, icon: <SiTravisci />}
 ]
 
 const MY_TOOLS = [
@@ -104,7 +108,7 @@ const MY_TOOLS = [
   { id: 4, icon: <DiMozilla /> },
   { id: 5, icon: <DiGoogleDrive /> },
   { id: 6, icon: <FaGithub /> },
-  { id: 7, icon: <FaGitkraken /> },
+  { id: 7, icon: <SiPostman /> },
   { id: 8, icon: <DiTerminal /> },
   { id: 9, icon: <DiTrello /> },
   { id: 10, icon: <FaJira /> },
@@ -118,28 +122,28 @@ const WHAT_I_DO = [
     icon: <FaLaptopCode />,
     title: 'Custom Web Apps',
     description:
-      'I develop dedicated applications with an efficient and functional front-end.',
+      'I develop high-impact, custom-made web applications with great quality.',
   },
   {
     id: 2,
     icon: <TiPencil />,
     title: 'UX/UI Analysis',
     description:
-      'I develop dedicated applications with an efficient and functional front-end.',
+      'I analyze the best design options to implement the best technology.',
   },
   {
     id: 3,
     icon: <IoIosRocket />,
     title: 'Advance Development',
     description:
-      'I develop dedicated applications with an efficient and functional front-end.',
+        `Coding with the most efficient frontend tools and libraries. I'm a Javascript enthusiastic.` ,
   },
   {
     id: 4,
     icon: <MdDevicesOther />,
     title: 'Multi Devices',
     description:
-      'I develop dedicated applications with an efficient and functional front-end.',
+      'A fan of responsive design details, all device matters to make any app shine.',
   },
 ]
 
@@ -182,7 +186,7 @@ const AboutMe = () => {
                 </ListWrapper>
             </Card>
             <Card>
-                <Title h2 content={'Main Skills'} maxFontSize={'21'} minFontSize={'18'}/>
+                <Title h2 content={'Main Technologies'} maxFontSize={'21'} minFontSize={'18'}/>
                 <ListWrapper>
                     {
                         MY_SKILLS.map(item => (
