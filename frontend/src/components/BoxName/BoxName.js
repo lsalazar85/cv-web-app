@@ -4,7 +4,15 @@ import { FaInstagram, FaLinkedinIn, FaGithub } from "react-icons/fa";
 import { MY_PHOTO } from '../../constans';
 import Image from '../../components/UI/Image/Image';
 import Title from '../../components/UI/Title';
-import { BoxNameContainer, BoxNameContent, BoxNameAvatar } from './styled';
+import {
+    BoxNameContainer,
+    BoxNameContent,
+    BoxNameAvatar,
+    NameDeveloper,
+    BoxNameListContent,
+    BoxNameList,
+    BoxNameLink
+} from './styled';
 
 const SOCIAL_MEDIA = [
   { id: 1, icon: <FaInstagram />, url: 'https://www.instagram.com/lanzaroth.js/' },
@@ -19,16 +27,16 @@ const BoxName = () => (
     </BoxNameAvatar>
     <BoxNameContent>
       <Title h1 content={'Luis Salazar'} maxFontSize={'45'} minFontSize={'18'} />
-      <span>Front End Developer</span>
-      <ul>
+      <NameDeveloper>Front End Developer</NameDeveloper>
+      <BoxNameListContent>
         {
           SOCIAL_MEDIA.map(item => (
-            <li key={item.id}>
-              <a rel="noopener noreferrer" href={item.url} target="_blank">{item.icon}</a>
-            </li>
+            <BoxNameList key={item.id}>
+              <BoxNameLink rel="noopener noreferrer" href={item.url} target="_blank">{item.icon}</BoxNameLink>
+            </BoxNameList>
           ))
         }
-      </ul>
+      </BoxNameListContent>
     </BoxNameContent>
   </BoxNameContainer>
 );

@@ -32,14 +32,6 @@ const MainContentContainer = styled.main`
         padding: 32px;
         max-width: 624px;
     }
-
-    p {
-        margin-bottom: 16px;
-
-        &:last-child {
-            margin-bottom: 0px;
-        }
-    }
 `
 
 export { MainContentContainer }

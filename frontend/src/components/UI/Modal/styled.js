@@ -82,12 +82,13 @@ const ModalHeader = styled.header`
     align-items: center;
     color: #000000;
     padding: 32px;
-    h3 {
-      font-size: 1.5em;
-      margin: 0;
-    }
   }
 `;
+
+const ModalHeaderTitle = styled.h3`
+  font-size: 1.5em;
+  margin: 0;
+`
 
 const ModalContent = styled.section`
   @media(min-width: 320px){
@@ -97,7 +98,7 @@ const ModalContent = styled.section`
     padding: 0 32px;
     position: relative;
     &::-webkit-scrollbar {
-      width: 0px;
+      width: 0;
       background: transparent;
     }
     p {
@@ -114,4 +115,4 @@ const ModalFooter = styled.footer`
   }
 `;
 
-export { CloseModalIcon, Animation, ModalOverlay, MainModal, ModalHeader, ModalContent, ModalFooter };
+export { CloseModalIcon, Animation, ModalOverlay, MainModal, ModalHeader, ModalContent, ModalFooter, ModalHeaderTitle };

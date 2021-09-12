@@ -2,9 +2,28 @@ import React from 'react';
 import { bool, node, func, string } from 'prop-types';
 import { Transition } from 'react-transition-group';
 
-import { CloseModalIcon, Animation, ModalOverlay, MainModal, ModalHeader, ModalContent, ModalFooter } from './styled';
+import {
+  CloseModalIcon,
+  Animation,
+  ModalOverlay,
+  MainModal,
+  ModalHeader,
+  ModalContent,
+  ModalFooter,
+  ModalHeaderTitle
+} from './styled';
 
-const Modal = ({ width, closeModal, title, show, onClose, content, footer, positionButtons }) => (
+const Modal = (
+    {
+      width,
+      closeModal,
+      title,
+      show,
+      onClose,
+      content,
+      footer,
+      positionButtons
+    }) => (
     <Transition in={show} timeout={500} unmountOnExit mountOnEnter>
       {state => (
         <Animation state={state}>
@@ -12,7 +31,7 @@ const Modal = ({ width, closeModal, title, show, onClose, content, footer, posit
           <MainModal width={width}>
             {title && (
               <ModalHeader>
-                <h3>{title}</h3>
+                <ModalHeaderTitle>{title}</ModalHeaderTitle>
               </ModalHeader>
             )}
             {closeModal && <CloseModalIcon onClick={onClose} data-testid="close-modal" />}

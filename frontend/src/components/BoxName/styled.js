@@ -40,47 +40,54 @@ const BoxNameContent = styled.section`
         flex-direction: row;
         justify-content: space-between;
     }
-
     @media (min-width: 992px) {flex-direction: column; align-items: center;}
-
-    span {
-        color: #00c483;
-        margin: 24px 0;
-
-        @media (min-width: 320px) {display: none; font-size: 18px;}
-        @media (min-width: 992px) {display: block; font-size: 22px}
-    }
-
-    ul {
-        display: flex;
-        flex-direction: row;
-
-        @media(min-width: 320px){margin-bottom: 0px;}
-
-        li {
-            margin-right: 16px;
-
-            &:last-child {
-                margin-right: 0px;
-            }
-
-           a {
-                color: #ffffff;
-                opacity: 0.95;
-                transition: 0.25s;
-
-                &:hover{
-                    color: #00c483;
-                    opacity: 1;
-                }
-
-                svg {
-                    @media (min-width: 320px) {width: 1.4em; height: 1.4em;}
-                    @media (min-width: 992px) {width: 1.8em; height: 1.8em;}
-                }
-           }
-        }
-    }
 `
 
-export { BoxNameContainer, BoxNameContent, BoxNameAvatar }
+const NameDeveloper = styled.span `
+  color: #00c483;
+  margin: 24px 0;
+
+  @media (min-width: 320px) {display: none; font-size: 18px;}
+  @media (min-width: 992px) {display: block; font-size: 22px}
+`
+
+const BoxNameListContent = styled.ul`
+  display: flex;
+  flex-direction: row;
+
+  @media(min-width: 320px){margin-bottom: 0;}
+`
+
+const BoxNameList = styled.li`
+  margin-right: 16px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+`
+
+const BoxNameLink = styled.a`
+  color: #ffffff;
+  opacity: 0.95;
+  transition: 0.25s;
+
+  &:hover{
+    color: #00c483;
+    opacity: 1;
+  }
+
+  svg {
+    @media (min-width: 320px) {width: 1.4em; height: 1.4em;}
+    @media (min-width: 992px) {width: 1.8em; height: 1.8em;}
+  }
+`
+
+export {
+    BoxNameContainer,
+    BoxNameContent,
+    BoxNameAvatar,
+    NameDeveloper,
+    BoxNameListContent,
+    BoxNameList,
+    BoxNameLink
+}

@@ -41,12 +41,16 @@ const SideIcons = styled.div`
             transform: scale(1.20);
         }
     }
-
-   ul {
-        li {
-            margin-bottom: 45px;
-            &:last-child{margin-bottom: 0;}
-        }
-   }
 `
-export { SideMenuContainer, SideIcons }
+const SideIconListWrapper = styled.ul`
+  display: flex;
+  flex-direction: column;
+`
+
+const SideIconList = styled.li`
+  margin-bottom: 45px;
+  &:last-child{margin-bottom: 0;}
+`
+
+
+export { SideMenuContainer, SideIcons, SideIconListWrapper, SideIconList }
