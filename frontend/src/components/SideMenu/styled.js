@@ -62,5 +62,9 @@ const SideIconList = styled.li`
   &:last-child{margin-bottom: 0;}
 `
 
-export { SideMenuContainer, SideIcons, SideIconListWrapper, SideIconList }
+const DownloadLink = styled.a`
+    display: flex;
+`
+
+export { SideMenuContainer, SideIcons, SideIconListWrapper, SideIconList, DownloadLink }
 

@@ -2,6 +2,8 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 import { RiMailSendLine } from 'react-icons/ri'
 
+import MyResume from '../../static/MyResume.pdf'
+
 import {
   VscAccount,
   VscBriefcase,
@@ -13,7 +15,8 @@ import {
     SideMenuContainer,
     SideIcons,
     SideIconListWrapper,
-    SideIconList
+    SideIconList,
+    DownloadLink
 } from './styled';
 
 const ICONS = [
@@ -39,7 +42,7 @@ const SideMenu = () => {
                 </SideIconListWrapper>
             </SideIcons>
             <SideIcons position={'flex-end'} padddingBotton={32}>
-                <VscCloudDownload />
+                <DownloadLink href={MyResume} download="Luis_Salazar"><VscCloudDownload /></DownloadLink>
             </SideIcons>
         </SideMenuContainer>
     )
