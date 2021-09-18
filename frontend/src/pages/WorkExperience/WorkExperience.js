@@ -3,6 +3,7 @@ import React from 'react'
 import Title from '../../components/UI/Title'
 import Card from '../../components/UI/Card'
 import { WorkExperienceContainer } from './styled'
+import { DataExperience } from "../../constans/dataExperience";
 
 const WorkExperience = () => {
   return (
@@ -13,38 +14,31 @@ const WorkExperience = () => {
         maxFontSize={'52'}
         minFontSize={'30'}
       />
-       <Card>
-        <Title h2 content={'Zx Ventures'} maxFontSize={'18'} minFontSize={'16'} />
-        <div>jolaasdasd</div>
-      </Card>
-      <Card>
-        <Title h2 content={'Mercado Libre'} maxFontSize={'18'} minFontSize={'16'} />
-        <div>jolaasdasd</div>
-      </Card>
-      <Card>
-        <Title h2 content={'Rappi'} maxFontSize={'18'} minFontSize={'16'} />
-        <div>jolaasdasd</div>
-      </Card>
-      <Card>
-        <Title h2 content={'Global Hitts Cono Sur'} maxFontSize={'18'} minFontSize={'16'} />
-        <div>jolaasdasd</div>
-      </Card>
-      <Card>
-        <Title h2 content={'BlueAlba'} maxFontSize={'18'} minFontSize={'16'} />
-        <div>jolaasdasd</div>
-      </Card>
-      <Card>
-        <Title h2 content={'Toolbox - The Unified TV Ecosystem'} maxFontSize={'18'} minFontSize={'16'} />
-        <div>jolaasdasd</div>
-      </Card>
-      <Card>
-        <Title h2 content={'Crandi'} maxFontSize={'18'} minFontSize={'16'} />
-        <div>jolaasdasd</div>
-      </Card>
-      <Card>
-        <Title h2 content={'Nextperience'} maxFontSize={'18'} minFontSize={'16'} />
-        <div>jolaasdasd</div>
-      </Card>
+        {DataExperience.map(item => {
+            return (
+                <Card key={item.id}>
+                    <a href={item.linkSite} target='_blank'>
+                        <Title h2 content={item.title} maxFontSize={'18'} minFontSize={'16'} />
+                    </a>
+                    <div>{item.occupation} - ({item.years})</div>
+                    <div>
+                        {item.content.map(item => {
+                            return(
+                                <div key={item.key}>{item.text}</div>
+                            )
+                        })}
+                    </div>
+                    <div>
+                        Tech-Stack:
+                        {item.techStack.map(tech => {
+                            return (
+                                <div key={tech.key}>{tech.label}</div>
+                            )
+                        })}
+                    </div>
+                </Card>
+            )
+        })}
     </WorkExperienceContainer>
   )
 }
